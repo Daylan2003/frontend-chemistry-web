@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import General from "./pages/General/General";
+import MatterAndItsProperties from "./pages/MatterAndItsProperties/MatterAndItsProperties";
+import DefinitionofMatter from "./pages/MatterAndItsProperties/DefinitionofMatter";
+import AtomicStructure from "./pages/AtomicStructure/AtomicStructure";
+import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
+import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
+import ChemicalReactions from "./pages/ChemicalReactions/ChemicalReactions";
+import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/MoleConceptAndStoichiometry";
+import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
+import GasesAndGasLaws from "./pages/GasesAndGasLaws/GasesAndGasLaws";
+import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndSolubility";
+import Header from "./components/Header";
+import BackButton from "./components/BackButton";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "red", minHeight: "100vh" }}>
+      <Header title="I Know Chemistry 🧪" />
+      <BackButton />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/general" element={<General />} />
+        <Route path="/matter-and-its-properties" element={<MatterAndItsProperties />} />
+        <Route path="/matter-and-its-properties/definition-of-matter" element={<DefinitionofMatter />} />
+        <Route path="/atomic-structure" element={<AtomicStructure />} />
+        <Route path="/periodic-table" element={<PeriodicTable />} />
+        <Route path="/chemical-bonding" element={<ChemicalBonding />} />
+        <Route path="/chemical-reactions" element={<ChemicalReactions />} />
+        <Route path="/mole-concept-and-stoichiometry" element={<MoleConceptAndStoichiometry />} />
+        <Route path="/acids-and-bases" element={<AcidsAndBases />} />
+        <Route path="/gases-and-gas-laws" element={<GasesAndGasLaws />} />
+        <Route path="/solutions-and-solubility" element={<SolutionsAndSolubility />} />
+      </Routes>
     </div>
   );
 }

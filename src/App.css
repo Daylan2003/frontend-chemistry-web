@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Force max 2 columns on all portrait mobile devices */
+@media (orientation: portrait) and (pointer: coarse) {
+  .button-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (orientation: landscape) and (pointer: coarse) {
+  .button-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .nav-button {
+    min-width: 0;
+    min-height: 0;
+  }
+}
+
+.nav-button {
+  border: 8px solid silver;
+  border-radius: 20px;
+  color: white;
+  transition: border 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect: white border and black text */
+.nav-button:hover,
+.nav-button:focus {
+  border: 8px solid white;
+  color: black;
+}
+
+/* Active/click effect: black border and white text */
+.nav-button:active {
+  border: 8px solid black;
+  color: white;
+}
+
+.hamburger-line {
+  background: #333;
+  transition: background 0.2s, height 0.2s, border-radius 0.2s;
+  display: block;
+  height: 4px;         /* Default desktop height */
+  width: 100%;
+  border-radius: 2px;  /* Default desktop border radius */
+}
+
+.hamburger-menu-btn:hover .hamburger-line,
+.hamburger-menu-btn:focus .hamburger-line {
+  background: white;
+}
+
+/* Add this for the hamburger menu drawer */
+.hamburger-menu-drawer {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-left: 1px solid gray;
+  box-shadow: -8px 0 24px -4px rgba(0, 0, 0, 0.5); /* Strong black shadow on the left */
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+  .header-title {
+    font-size: 3.6vh !important;
+    padding-bottom: 1vh !important;
+  }
+  .hamburger-line {
+    height: 50vh !important;         /* Taller lines for mobile */
+    border-radius: 50vh !important;  /* More rounded for mobile */
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
