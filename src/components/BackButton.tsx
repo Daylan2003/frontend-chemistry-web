@@ -10,6 +10,7 @@ const BackButton: React.FC = () => {
 
   return (
     <button
+      className="back-button-fixed"
       onClick={() => navigate(-1)}
       style={{
         position: "fixed",
@@ -19,7 +20,7 @@ const BackButton: React.FC = () => {
         padding: "0.75rem 1.5rem",
         borderRadius: "12px",
         border: "2px solid #b0bec5",
-        background: "#ccc", // Match header background color
+        background: "#ccc",
         color: "black",
         fontWeight: "bold",
         fontSize: "1.1rem",

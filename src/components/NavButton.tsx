@@ -16,6 +16,8 @@ const NavButton: React.FC<NavButtonProps> = ({ label, to, color, navigate }) => 
       style={{
         width: "100%",
         aspectRatio: "1 / 1",
+        minWidth: 0,      // Allow shrinking
+        minHeight: 0,     // Allow shrinking
         fontSize: "2.5rem",
         backgroundColor: color,
         cursor: "pointer",
