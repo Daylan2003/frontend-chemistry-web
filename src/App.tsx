@@ -17,7 +17,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "red", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <Header title="I Know Chemistry 🧪" />
       <BackButton />
       <Routes>

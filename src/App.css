@@ -108,15 +108,41 @@
 
 @media (pointer: coarse) and (hover: none) {
   .header-title {
-    font-size: 3.6vh !important;
+    font-size: 7vw !important;
     padding-bottom: 1vh !important;
   }
   .hamburger-line {
-    height: 50vh !important;         /* Taller lines for mobile */
-    border-radius: 50vh !important;  /* More rounded for mobile */
+    height: 5vh !important;         /* Taller lines for mobile */
+    border-radius: 5vh !important;  /* More rounded for mobile */
   }
 }
 
 body {
   overflow-x: hidden;
+}
+
+@media (max-width: 100px) {
+  .back-button-fixed {
+    bottom: 720px !important; /* Move up from the bottom */
+    left: 8px !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* App.css */
+.hamburger-icon-container {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Only on mobile */
+@media (pointer: coarse) and (hover: none) {
+  .hamburger-icon-container {
+    width: 40px;   /* or your preferred mobile width */
+    height: 32px;  /* or your preferred mobile height */
+  }
 }

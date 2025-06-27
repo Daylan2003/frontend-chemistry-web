@@ -17,10 +17,43 @@ const HamburgerMenu: React.FC = () => {
         }}
         aria-label="Open menu"
       >
-        <div style={{ width: 30, height: 22, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-          <span className="hamburger-line" style={{ display: "block", height: 4, width: "100%", borderRadius: 2 }} />
-          <span className="hamburger-line" style={{ display: "block", height: 4, width: "100%", borderRadius: 2 }} />
-          <span className="hamburger-line" style={{ display: "block", height: 4, width: "100%", borderRadius: 2 }} />
+        <div
+          className="hamburger-icon-container"
+          style={{
+            width: 30,
+            height: 22,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
+          <span
+            className="hamburger-line"
+            style={{
+              display: "block",
+              height: 4,
+              width: "100%",
+              borderRadius: 2,
+            }}
+          />
+          <span
+            className="hamburger-line"
+            style={{
+              display: "block",
+              height: 4,
+              width: "100%",
+              borderRadius: 2,
+            }}
+          />
+          <span
+            className="hamburger-line"
+            style={{
+              display: "block",
+              height: 4,
+              width: "100%",
+              borderRadius: 2,
+            }}
+          />
         </div>
       </button>
       {open && (
@@ -57,15 +90,49 @@ const HamburgerMenu: React.FC = () => {
             &times;
           </button>
           <nav style={{ width: "100%", padding: "48px 0 0 0" }}>
-            <ul style={{ listStyle: "none", margin: 0, padding: 0, textAlign: "center" }}>
+            <ul
+              style={{
+                listStyle: "none",
+                margin: 0,
+                padding: 0,
+                textAlign: "center",
+              }}
+            >
               <li style={{ margin: "32px 0" }}>
-                <a href="/" style={{ textDecoration: "none", color: "#333", fontSize: "2rem" }}>Home</a>
+                <a
+                  href="/"
+                  style={{
+                    textDecoration: "none",
+                    color: "#333",
+                    fontSize: "2rem",
+                  }}
+                >
+                  Home
+                </a>
               </li>
               <li style={{ margin: "32px 0" }}>
-                <a href="/about" style={{ textDecoration: "none", color: "#333", fontSize: "2rem" }}>About</a>
+                <a
+                  href="/about"
+                  style={{
+                    textDecoration: "none",
+                    color: "#333",
+                    fontSize: "2rem",
+                  }}
+                >
+                  About
+                </a>
               </li>
               <li style={{ margin: "32px 0" }}>
-                <a href="/contact" style={{ textDecoration: "none", color: "#333", fontSize: "2rem" }}>Submit a Question</a>
+                <a
+                  href="/contact"
+                  style={{
+                    textDecoration: "none",
+                    color: "#333",
+                    fontSize: "2rem",
+                  }}
+                >
+                  Submit a Question
+                </a>
               </li>
             </ul>
           </nav>

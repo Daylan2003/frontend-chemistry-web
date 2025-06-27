@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => (
       justifyContent: "space-between",
       backgroundColor: "#ccc",
       paddingBottom: "8px",
-      marginBottom: "16px",
+      marginBottom: "-30vh",
       borderBottomLeftRadius: "24px",   // Bevel bottom left
       borderBottomRightRadius: "24px",  // Bevel bottom right
       boxShadow: "0 8px 24px -4px rgba(0,0,0,0.5)", // Stronger black shadow at bottom
