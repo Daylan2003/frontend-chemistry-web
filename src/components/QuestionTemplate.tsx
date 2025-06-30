@@ -3,7 +3,8 @@ import axios from "axios";
 
 interface QuestionTemplateProps {
   question: string;
-  backgroundColor?: string;
+  backgroundColor: string;
+  prompt?: string; // Add this line
   author?: string;
   from?: string;
 }
@@ -13,6 +14,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   backgroundColor = "#607D8B",
   author = "Unknown",
   from = "Unknown",
+  prompt, // Destructure prompt
 }) => {
   const [answer, setAnswer] = useState<string>("");
   const [result, setResult] = useState<string>("");
@@ -31,6 +33,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
       const response = await axios.post("http://localhost:8000/grade", {
         question: question,
         students_answer: answer,
+        prompt, // send the custom prompt
       });
 
       setResult(response.data.result);

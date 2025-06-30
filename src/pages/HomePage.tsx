@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
           navigate={navigate}
         />
         <NavButton
-          label="Atomic Strcture"
+          label="Atomic Structure"
           to="/atomic-structure"
           color="#673AB7"
           navigate={navigate}
@@ -82,6 +82,8 @@ const HomePage: React.FC = () => {
           navigate={navigate}
         />
       </div>
+      {/* Coloured div of size 32px under everything */}
+      <div style={{ width: "100%", height: 128, background: "red" }} />
     </div>
   );
 };
