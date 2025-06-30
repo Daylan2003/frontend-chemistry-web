@@ -30,7 +30,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
     setResult("");
 
     try {
-      const response = await axios.post("http://localhost:8000/grade", {
+      const response = await axios.post("https://backend-chemistry-web.onrender.com", {
         question: question,
         students_answer: answer,
         prompt, // send the custom prompt
