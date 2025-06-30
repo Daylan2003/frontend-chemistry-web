@@ -4,7 +4,7 @@ import QuestionTemplate from "../../components/QuestionTemplate";
 const QUESTION1 = "List three states of matter.";
 const QUESTION2 = "Define Matter.";
 
-const PROMPT1 = "Grade the student's answer for listing the three states of matter. If solid, liquid and glass is present, then simply say Congratulations ! You answer is 100% correct. If there are spelling errors still give the answer correct but point out the spelling errors";
+const PROMPT1 = "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then simply say Congratulations ! You answer is 100% correct. If there are spelling errors still give the answer correct but point out the spelling errors";
 const PROMPT2 = "Grade the student's definition of matter. Look for the idea that matter has mass and occupies space.";
 
 const DefinitionofMatter: React.FC = () => {
