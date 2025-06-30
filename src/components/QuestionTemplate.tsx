@@ -9,12 +9,14 @@ interface QuestionTemplateProps {
   from?: string;
 }
 
+// ... imports and interface remain the same
+
 const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   question,
   backgroundColor = "#607D8B",
   author = "Unknown",
   from = "Unknown",
-  prompt, // Destructure prompt
+  prompt,
 }) => {
   const [answer, setAnswer] = useState<string>("");
   const [result, setResult] = useState<string>("");
@@ -31,9 +33,9 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
 
     try {
       const response = await axios.post("https://backend-chemistry-web.onrender.com/grade", {
-        question: question,
+        question,
         students_answer: answer,
-        prompt, // send the custom prompt
+        prompt,
       });
 
       setResult(response.data.result);
@@ -43,6 +45,10 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
 
     setLoading(false);
   };
+
+  // ✅ New clear handlers
+  const clearAnswer = () => setAnswer("");
+  const clearResult = () => setResult("");
 
   return (
     <div
@@ -56,7 +62,6 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
       }}
     >
-      {/* Author and From section */}
       <div style={{ marginBottom: "0.5rem", fontSize: "1rem", color: "#e0e0e0" }}>
         <strong>Question Author:</strong> {author}
         <br />
@@ -83,27 +88,43 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         }}
       />
 
-      <button
-        onClick={handleGrade}
-        disabled={loading}
-        style={{
-          padding: "0.5rem 1rem",
-          borderRadius: "12px", // bevel for button
-          border: "2px solid #b0bec5",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-          background: "#455A64",
-          color: "white",
-          fontWeight: "bold",
-          cursor: "pointer",
-          transition: "background 0.2s, box-shadow 0.2s",
-        }}
-      >
-        {loading ? "Grading..." : "Grade Answer"}
-      </button>
+      {/* Buttons container */}
+      <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem" }}>
+        <button
+          onClick={handleGrade}
+          disabled={loading}
+          style={{
+            padding: "0.5rem 1rem",
+            borderRadius: "12px",
+            border: "2px solid #b0bec5",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+            background: "#455A64",
+            color: "white",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          {loading ? "Grading..." : "Grade Answer"}
+        </button>
+
+        <button
+          onClick={clearAnswer}
+          style={{
+            padding: "0.5rem 1rem",
+            borderRadius: "12px",
+            border: "2px solid #90a4ae",
+            background: "#cfd8dc",
+            color: "#333",
+            cursor: "pointer",
+          }}
+        >
+          Clear Answer
+        </button>
+      </div>
 
       <pre
         style={{
-          marginTop: "2rem",
+          marginTop: "1rem",
           background: "#f5f5f5",
           padding: "1rem",
           color: "#222",
@@ -111,10 +132,29 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
           border: "2px solid #b0bec5",
           boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
           minHeight: "3rem",
+          whiteSpace: "pre-wrap",           //  Wrap long lines
+          wordWrap: "break-word",           //  Break long words
+          overflowX: "auto",                //  Horizontal scrollbar if still too long
+          maxHeight: "300px",               //  Optional: cap height & make scrollable
+          overflowY: "auto",                //  Vertical scrollbar if content is long
         }}
       >
         {result}
       </pre>
+
+      <button
+          onClick={clearResult}
+          style={{
+            padding: "0.5rem 1rem",
+            borderRadius: "12px",
+            border: "2px solid #90a4ae",
+            background: "#cfd8dc",
+            color: "#333",
+            cursor: "pointer",
+          }}
+        >
+          Clear Feedback
+        </button>
     </div>
   );
 };
