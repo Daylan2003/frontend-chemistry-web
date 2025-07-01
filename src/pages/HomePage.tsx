@@ -20,13 +20,17 @@ const HomePage: React.FC = () => {
         overflowX: "hidden",
       }}
     >
-      <div className="button-grid">
+      {/* General Questions button centered, 2:1 ratio, between header and grid */}
+      <div className="general-button-container">
         <NavButton
           label="General Questions"
           to="/general"
           color="#007BFF"
           navigate={navigate}
+          style={{ aspectRatio: "2 / 1", maxWidth: "600px", minWidth: 0, minHeight: 0 }}
         />
+      </div>
+      <div className="button-grid">
         <NavButton
           label="Matter and Its Properties"
           to="/matter-and-its-properties"

@@ -14,10 +14,12 @@ import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndS
 import Header from "./components/Header";
 import BackButton from "./components/BackButton";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div style={{ minHeight: "100vh" }}>
+      <ScrollToTop />
       <Header title="I Know Chemistry 🧪" />
       <BackButton />
       <Routes>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const HamburgerMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <div style={{ position: "relative" }}>
@@ -118,6 +119,7 @@ const HamburgerMenu: React.FC = () => {
                     color: "#333",
                     fontSize: "2rem",
                   }}
+                  onClick={e => { e.preventDefault(); setAboutOpen(true); }}
                 >
                   About
                 </a>
@@ -136,6 +138,59 @@ const HamburgerMenu: React.FC = () => {
               </li>
             </ul>
           </nav>
+        </div>
+      )}
+      {aboutOpen && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            background: "rgba(0,0,0,0.4)",
+            zIndex: 300,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              background: "white",
+              borderRadius: "24px",
+              padding: "3rem 2.5rem",
+              maxWidth: "90vw",
+              maxHeight: "80vh",
+              width: "600px",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              position: "relative",
+            }}
+          >
+            <button
+              onClick={() => setAboutOpen(false)}
+              style={{
+                background: "none",
+                border: "none",
+                fontSize: "2rem",
+                color: "#333",
+                cursor: "pointer",
+                position: "absolute",
+                top: 16,
+                right: 24,
+              }}
+              aria-label="Close about modal"
+            >
+              &times;
+            </button>
+            <div style={{ width: "100%", textAlign: "left", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem" }}>
+              <h2>About This Website</h2>
+              <p>This is some arbitrary text about the website. You can put any information you want here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.</p>
+            </div>
+          </div>
         </div>
       )}
     </div>

@@ -39,11 +39,18 @@
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   max-width: 100vw;
-  margin: 2.5rem auto 0 auto;
-  padding: 30vh 2rem 2rem 2rem; /* 30vh top padding, 2rem sides and bottom */
+  margin: 0.15rem auto 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.general-button-container {
+  width: min(90vw, 600px);
+  margin: 35vh auto 0.15rem auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* On desktop: min 3, max 5 columns */
@@ -142,6 +149,15 @@
     left: 8px !important;
     padding: 0.5rem 1rem !important;
     font-size: 1rem !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .button-grid {
+    gap: 0.75rem;
+  }
+  .hamburger-line {
+    height: 4px !important;
   }
 }
 

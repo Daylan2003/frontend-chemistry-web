@@ -21,6 +21,11 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   const [answer, setAnswer] = useState<string>("");
   const [result, setResult] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [clearAnswerPressed, setClearAnswerPressed] = useState(false);
+  const [clearFeedbackPressed, setClearFeedbackPressed] = useState(false);
+  const [gradeHover, setGradeHover] = useState(false);
+  const [clearAnswerHover, setClearAnswerHover] = useState(false);
+  const [clearFeedbackHover, setClearFeedbackHover] = useState(false);
 
   const handleGrade = async () => {
     if (!answer.trim()) {
@@ -93,15 +98,18 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         <button
           onClick={handleGrade}
           disabled={loading}
+          onMouseEnter={() => setGradeHover(true)}
+          onMouseLeave={() => setGradeHover(false)}
           style={{
             padding: "0.5rem 1rem",
             borderRadius: "12px",
-            border: "2px solid #b0bec5",
+            border: gradeHover ? "2px solid white" : "2px solid #b0bec5",
             boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
             background: "#455A64",
-            color: "white",
+            color: gradeHover ? "white" : "white",
             fontWeight: "bold",
             cursor: "pointer",
+            transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
           {loading ? "Grading..." : "Grade Answer"}
@@ -109,13 +117,20 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
 
         <button
           onClick={clearAnswer}
+          onMouseDown={() => setClearAnswerPressed(true)}
+          onMouseUp={() => setClearAnswerPressed(false)}
+          onMouseEnter={() => setClearAnswerHover(true)}
+          onMouseLeave={() => { setClearAnswerPressed(false); setClearAnswerHover(false); }}
           style={{
             padding: "0.5rem 1rem",
             borderRadius: "12px",
-            border: "2px solid #90a4ae",
-            background: "#cfd8dc",
-            color: "#333",
+            border: clearAnswerHover ? "2px solid white" : "2px solid #b0bec5",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+            background: clearAnswerPressed ? "#ff1744" : "#b71c1c",
+            color: clearAnswerHover ? "white" : "white",
             cursor: "pointer",
+            fontWeight: "bold",
+            transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
           Clear Answer
@@ -144,13 +159,20 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
 
       <button
           onClick={clearResult}
+          onMouseDown={() => setClearFeedbackPressed(true)}
+          onMouseUp={() => setClearFeedbackPressed(false)}
+          onMouseEnter={() => setClearFeedbackHover(true)}
+          onMouseLeave={() => { setClearFeedbackPressed(false); setClearFeedbackHover(false); }}
           style={{
             padding: "0.5rem 1rem",
             borderRadius: "12px",
-            border: "2px solid #90a4ae",
-            background: "#cfd8dc",
-            color: "#333",
+            border: clearFeedbackHover ? "2px solid white" : "2px solid #b0bec5",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+            background: clearFeedbackPressed ? "#ff1744" : "#b71c1c",
+            color: clearFeedbackHover ? "white" : "white",
             cursor: "pointer",
+            fontWeight: "bold",
+            transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
           Clear Feedback

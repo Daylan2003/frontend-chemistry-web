@@ -4,7 +4,7 @@ import QuestionTemplate from "../../components/QuestionTemplate";
 const QUESTION1 = "List three states of matter.";
 const QUESTION2 = "Define Matter.";
 
-const PROMPT1 = "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then simply say Congratulations ! You answer is 100% correct. If there are spelling errors still give the answer correct but point out the spelling errors";
+const PROMPT1 = "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then say, Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors";
 const PROMPT2 = "Grade the student's definition of matter. Look for the idea that matter has mass and occupies space.";
 
 const DefinitionofMatter: React.FC = () => {
@@ -32,11 +32,15 @@ const DefinitionofMatter: React.FC = () => {
           question={QUESTION1}
           backgroundColor="#607D8B"
           prompt={PROMPT1}
+          author="Daylan"
+          from="Canada"
         />
         <QuestionTemplate
           question={QUESTION2}
           backgroundColor="#607D8B"
           prompt={PROMPT2}
+          author="Daylan"
+          from="Canada"
         />
       </div>
     </>
