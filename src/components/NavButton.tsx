@@ -6,10 +6,9 @@ interface NavButtonProps {
   to: string;
   color: string;
   navigate: NavigateFunction;
-  style?: React.CSSProperties;
 }
 
-const NavButton: React.FC<NavButtonProps> = ({ label, to, color, navigate, style }) => {
+const NavButton: React.FC<NavButtonProps> = ({ label, to, color, navigate }) => {
   return (
     <button
       className="nav-button"
@@ -26,8 +25,7 @@ const NavButton: React.FC<NavButtonProps> = ({ label, to, color, navigate, style
         alignItems: "center",
         justifyContent: "center",
         padding: 0,
-        boxShadow: `0 2px 6px -1px rgba(0,0,0,0.5), 0 -2px 6px -1px rgba(0,0,0,0.5), 2px 0 6px -1px rgba(0,0,0,0.5), -2px 0 6px -1px rgba(0,0,0,0.5)`,
-        ...style,
+        boxShadow: `0 2px 6px -1px rgba(0,0,0,0.5), 0 -2px 6px -1px rgba(0,0,0,0.5), 2px 0 6px -1px rgba(0,0,0,0.5), -2px 0 6px -1px rgba(0,0,0,0.5)`
       }}
     >
       {label}
