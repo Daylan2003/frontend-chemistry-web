@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import General from "./pages/General/General";
 import MatterAndItsProperties from "./pages/MatterAndItsProperties/MatterAndItsProperties";
 import DefinitionofMatter from "./pages/MatterAndItsProperties/DefinitionofMatter";
+import ChemicalProperties from "./pages/MatterAndItsProperties/ChemicalProperties";
 import AtomicStructure from "./pages/AtomicStructure/AtomicStructure";
 import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
 import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
@@ -11,6 +12,7 @@ import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/Mol
 import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
 import GasesAndGasLaws from "./pages/GasesAndGasLaws/GasesAndGasLaws";
 import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndSolubility";
+import LaboratoryWork from "./pages/LaboratoryWork";
 import Header from "./components/Header";
 import BackButton from "./components/BackButton";
 import "./App.css";
@@ -27,6 +29,7 @@ function App() {
         <Route path="/general" element={<General />} />
         <Route path="/matter-and-its-properties" element={<MatterAndItsProperties />} />
         <Route path="/matter-and-its-properties/definition-of-matter" element={<DefinitionofMatter />} />
+        <Route path="/matter-and-its-properties/chemical-properties" element={<ChemicalProperties />} />
         <Route path="/atomic-structure" element={<AtomicStructure />} />
         <Route path="/periodic-table" element={<PeriodicTable />} />
         <Route path="/chemical-bonding" element={<ChemicalBonding />} />
@@ -35,6 +38,7 @@ function App() {
         <Route path="/acids-and-bases" element={<AcidsAndBases />} />
         <Route path="/gases-and-gas-laws" element={<GasesAndGasLaws />} />
         <Route path="/solutions-and-solubility" element={<SolutionsAndSolubility />} />
+        <Route path="/laboratory-work" element={<LaboratoryWork />} />
       </Routes>
     </div>
   );

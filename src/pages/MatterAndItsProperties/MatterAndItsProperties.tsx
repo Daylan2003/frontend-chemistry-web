@@ -5,9 +5,6 @@ import TopicButton from "../../components/TopicButton";
 const buttonLabels = [
   "Definition of Matter",
   "Chemical Properties",
-  "States of Matter",
-  "Changes of State",
-  "Mixtures and Pure Substances",
 ];
 
 const MatterAndItsProperties: React.FC = () => {
@@ -50,9 +47,12 @@ const MatterAndItsProperties: React.FC = () => {
               navigate("/matter-and-its-properties/definition-of-matter")
             }
           />
-          {buttonLabels.slice(1).map((label) => (
-            <TopicButton key={label} label={label} />
-          ))}
+          <TopicButton
+            label="Chemical Properties"
+            onClick={() =>
+              navigate("/matter-and-its-properties/chemical-properties")
+            }
+          />
         </div>
       </div>
     </>

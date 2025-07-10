@@ -85,6 +85,12 @@ const HomePage: React.FC = () => {
           color="#2980b9"
           navigate={navigate}
         />
+        <NavButton
+          label="Laboratory Work"
+          to="/laboratory-work"
+          color="#388E3C"
+          navigate={navigate}
+        />
       </div>
       {/* Coloured div of size 32px under everything */}
       <div style={{ width: "100%", height: 128, background: "red" }} />

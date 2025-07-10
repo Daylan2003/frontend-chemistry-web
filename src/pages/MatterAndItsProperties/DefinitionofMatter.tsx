@@ -5,7 +5,7 @@ const QUESTION1 = "List three states of matter.";
 const QUESTION2 = "Define Matter.";
 
 const PROMPT1 = "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then say, Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors";
-const PROMPT2 = "Grade the student's definition of matter. Look for the idea that matter has mass and occupies space.";
+const PROMPT2 = "Grade the students answer for saying that matter is anything that has mass and volume. They should specify the words volume and mass. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors They should not use synonyms. If not do not have these two words or they have synonyms instead then point this out nicely to them";
 
 const DefinitionofMatter: React.FC = () => {
   return (
