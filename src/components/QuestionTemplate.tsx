@@ -65,8 +65,27 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         maxWidth: 600,
         width: "100%",
         boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
+        position: "relative",
       }}
     >
+      {/* Difficulty Label */}
+      <div
+        style={{
+          position: "absolute",
+          top: "1rem",
+          right: "1.5rem",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          fontSize: "0.9rem",
+          backgroundColor: "rgba(76, 175, 80, 0.1)",
+          padding: "0.25rem 0.5rem",
+          borderRadius: "8px",
+          border: "1px solid #4CAF50",
+        }}
+      >
+        EASY
+      </div>
+
       <div style={{ marginBottom: "0.5rem", fontSize: "1rem", color: "#e0e0e0" }}>
         <strong>Question Author:</strong> {author}
         <br />
