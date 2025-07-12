@@ -48,16 +48,41 @@ export const questions: Question[] = [
     difficulty: "EASY",
     questionNumber: 4
   },
-
-  // Subatomic Particles questions
   {
-    id: "subatomic-1",
-    question: "What are the three main subatomic particles found in an atom?",
-    prompt: "Grade the student for correctly identifying the three main subatomic particles: protons, neutrons, and electrons. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    id: "sub-part-1",
+    question: "What are the 3 main subatomic particles and what are their charges?",
+    prompt: "Grade the student for saying that the three main subatomic particles are protons, with a charge of +1, neutrons with a charge of 0 and electrons with a charge of -1.  If the student does not have all then point this out nicely to them but if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 5
+  },
+  {
+    id: "sub-part-2",
+    question: "Where in the atom are protons, neutrons and electrons located ?",
+    prompt: "Grade the answer for saying that protons and neutrons are located in the nucleus but electrons are located in shells around the nucleus. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 6
+  },
+  {
+    id: "elec-config-1",
+    question: "How many electrons can fit in the first and second energy levels of an atom?",
+    prompt: "Grade the answer for saying that 2 can fit in the first energy level and 8 can fit in the second energy level.  If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 7
+  },
+  {
+    id: "elec-config-2",
+    question: "What is the electronic configuration for an atom with 10 electrons ?",
+    prompt: "Grade the answer for saying that there are 2 electrons in the first shell and 8 in the second shell. Or for simply saying 2,8 . If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 8
   }
 ];
 

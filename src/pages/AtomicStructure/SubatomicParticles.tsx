@@ -7,7 +7,7 @@ const SubatomicParticles: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference questions by their IDs
-  const questionIds = ["subatomic-1"];
+  const questionIds = ["sub-part-1", "sub-part-2"];
   const questions = getQuestionsByIds(questionIds);
 
   return (

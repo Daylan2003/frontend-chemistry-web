@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import QuestionTemplate from "../../components/QuestionTemplate";
+import SearchAndFilter from "../../components/SearchAndFilter";
+import { getQuestionsByIds } from "../../data/questions";
 
 const ElectronicConfiguration: React.FC = () => {
+  const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
+
+  // Reference questions by their IDs
+  const questionIds = ["elec-config-1", "elec-config-2"];
+  const questions = getQuestionsByIds(questionIds);
+
   return (
     <>
       {/* Colored bar below header, unique to this page */}
@@ -21,7 +30,25 @@ const ElectronicConfiguration: React.FC = () => {
         }}
       >
         <h2 style={{ margin: "0rem 0 1.5rem 0" }}>Electronic Configuration</h2>
-        <p>Content for Electronic Configuration will be added here.</p>
+        {/* Search and Filter Component */}
+        <SearchAndFilter 
+          questions={questions}
+          onFilteredQuestionsChange={setFilteredQuestions}
+        />
+
+        {/* Filtered Questions */}
+        {filteredQuestions.map((q, index) => (
+          <QuestionTemplate
+            key={q.id}
+            question={q.question}
+            backgroundColor="#9575CD"
+            prompt={q.prompt}
+            author={q.author}
+            from={q.from}
+            questionNumber={q.questionNumber}
+            id={q.id}
+          />
+        ))}
       </div>
     </>
   );
