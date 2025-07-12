@@ -253,6 +253,47 @@ export const questions: Question[] = [
     questionNumber: 24,
     subSection: "stoichiometry"
   },
+    {
+    id: "acids-bases-1",
+    question: "What is an acid (according to ionization)?",
+    prompt: "Grade the answer for saying that an acid is a substance which produces Hydrogen ions when it is added to water. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 25,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-2",
+    question: "What is a base (according to ionization)?",
+    prompt: "Grade the answer for saying that a base is a substance which produces Hydroxide ions when it is added to water. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 26,
+    subSection: "acids and bases properties"
+  },
+  {
+    id: "acids-bases-3",
+    question: "What is the pH range for acids and bases?",
+    prompt: "Grade the answer for saying that Acids have a pH of less than 7 and bases have a pH of greater than 7. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 27,
+    subSection: "acids and bases properties"
+  },
+  {
+    id: "acids-bases-reactions-1",
+    question: "What is a neutralization reaction?",
+    prompt: "Grade the answer for saying that in a neutralization reaction an acid reacts with a base to form water and salt. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 28,
+    subSection: "acids and bases reactions"
+  },
+
 ];
 
 // Helper function to get questions by ID array
