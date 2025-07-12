@@ -8,6 +8,7 @@ interface Question {
   from: string;
   difficulty: string;
   questionNumber: number;
+  subSection: string;
 }
 
 interface SearchAndFilterProps {
@@ -19,12 +20,20 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
   const [searchTerm, setSearchTerm] = useState("");
   const [filterBy, setFilterBy] = useState("author");
   const [filterValue, setFilterValue] = useState("");
+  const [sectionFilter, setSectionFilter] = useState("");
   const [tags, setTags] = useState<{type: string, value: string}[]>([]);
 
   const handleAddTag = () => {
     if (filterValue.trim() && !tags.some(tag => tag.type === filterBy && tag.value === filterValue.trim())) {
       setTags([...tags, {type: filterBy, value: filterValue.trim()}]);
       setFilterValue("");
+    }
+  };
+
+  const handleAddSectionTag = () => {
+    if (sectionFilter.trim() && !tags.some(tag => tag.type === "section" && tag.value === sectionFilter.trim())) {
+      setTags([...tags, {type: "section", value: sectionFilter.trim()}]);
+      setSectionFilter("");
     }
   };
 
@@ -38,8 +47,15 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
       case "from": return "By From:";
       case "difficulty": return "By Difficulty:";
       case "id": return "By ID:";
+      case "section": return "By Section:";
       default: return "By Question:";
     }
+  };
+
+  // Get unique sub-sections from questions
+  const getUniqueSubSections = () => {
+    const subSections = questions.map(q => q.subSection);
+    return Array.from(new Set(subSections)).sort();
   };
 
   React.useEffect(() => {
@@ -63,6 +79,8 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
             return q.difficulty.toLowerCase().includes(tag.value.toLowerCase());
           case "id":
             return q.id.toLowerCase().includes(tag.value.toLowerCase());
+          case "section":
+            return q.subSection.toLowerCase().includes(tag.value.toLowerCase());
           default:
             return q.question.toLowerCase().includes(tag.value.toLowerCase());
         }
@@ -121,74 +139,136 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
         </h3>
       </div>
 
-      {/* Filter Controls */}
+      {/* Filter Controls Row */}
       <div style={{ 
         display: "flex", 
-        gap: "0"
+        justifyContent: "space-between",
+        alignItems: "flex-start",
+        gap: "1rem",
+        flexWrap: "wrap"
       }}>
-        {/* Filter Dropdown */}
-        <div style={{ width: "150px" }}>
-          <select
-            value={filterBy}
-            onChange={(e) => setFilterBy(e.target.value)}
-            style={{
-              width: "100%",
-              padding: "0.75rem 1rem",
-              borderRadius: "12px 0 0 12px",
-              border: "2px solid #b0bec5",
-              fontSize: "1rem",
-              backgroundColor: "white",
-              color: "#333",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-            }}
-          >
-            <option value="author">By Author</option>
-            <option value="from">By From</option>
-            <option value="difficulty">By Difficulty</option>
-            <option value="id">By ID</option>
-          </select>
+        {/* Left Filter Controls */}
+        <div style={{ 
+          display: "flex", 
+          gap: "0"
+        }}>
+          {/* Filter Dropdown */}
+          <div style={{ width: "150px" }}>
+            <select
+              value={filterBy}
+              onChange={(e) => setFilterBy(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "0.75rem 1rem",
+                borderRadius: "12px 0 0 12px",
+                border: "2px solid #b0bec5",
+                fontSize: "1rem",
+                backgroundColor: "white",
+                color: "#333",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              }}
+            >
+              <option value="author">By Author</option>
+              <option value="from">By From</option>
+              <option value="difficulty">By Difficulty</option>
+              <option value="id">By ID</option>
+            </select>
+          </div>
+
+          {/* Filter Value Input */}
+          <div style={{ width: "150px" }}>
+            <input
+              type="text"
+              placeholder="Filter value..."
+              value={filterValue}
+              onChange={(e) => setFilterValue(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "0.8rem 1rem",
+                borderRadius: "0 12px 12px 0",
+                borderLeft: "none",
+                border: "2px solid #b0bec5",
+                fontSize: "1rem",
+                backgroundColor: "white",
+                color: "#333",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              }}
+            />
+          </div>
+
+          {/* Green Checkmark Button */}
+          <div style={{ width: "50px", margin: "0" }}>
+            <button
+              onClick={handleAddTag}
+              style={{
+                width: "100%",
+                height: "97%",
+                padding: "0.75rem",
+                borderRadius: "0 12px 12px 0",
+                border: "2px solid #4caf50",
+                fontSize: "1rem",
+                backgroundColor: "#4caf50",
+                color: "white",
+                cursor: "pointer",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              }}
+            >
+              ✓
+            </button>
+          </div>
         </div>
 
-        {/* Filter Value Input */}
-        <div style={{ width: "150px" }}>
-          <input
-            type="text"
-            placeholder="Filter value..."
-            value={filterValue}
-            onChange={(e) => setFilterValue(e.target.value)}
-            style={{
-              width: "100%",
-              padding: "0.8rem 1rem",
-              borderRadius: "0 12px 12px 0",
-              borderLeft: "none",
-              border: "2px solid #b0bec5",
-              fontSize: "1rem",
-              backgroundColor: "white",
-              color: "#333",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-            }}
-          />
-        </div>
+        {/* Right Section Filter Controls */}
+        <div style={{ 
+          display: "flex", 
+          gap: "0",
+          marginLeft: "auto"
+        }}>
+          {/* Section Filter Dropdown */}
+          <div style={{ width: "200px" }}>
+            <select
+              value={sectionFilter}
+              onChange={(e) => setSectionFilter(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "0.75rem 1rem",
+                borderRadius: "12px 0 0 12px",
+                border: "2px solid #b0bec5",
+                fontSize: "1rem",
+                backgroundColor: "white",
+                color: "#333",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              }}
+            >
+              <option value="">Select Sub-Section...</option>
+              {getUniqueSubSections().map(subSection => (
+                <option key={subSection} value={subSection}>
+                  {subSection}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Green Checkmark Button */}
-        <div style={{ width: "50px", margin: "0" }}>
-          <button
-            onClick={handleAddTag}
-            style={{
-              width: "100%",
-              height: "97%",
-              padding: "0.75rem",
-              borderRadius: "0 12px 12px 0",
-              border: "2px solid #4caf50",
-              fontSize: "1rem",
-              backgroundColor: "#4caf50",
-              color: "white",
-              cursor: "pointer",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-            }}
-          >
-            ✓
-          </button>
+          {/* Section Filter Green Checkmark Button */}
+          <div style={{ width: "50px", margin: "0" }}>
+            <button
+              onClick={handleAddSectionTag}
+              style={{
+                width: "100%",
+                height: "97%",
+                padding: "0.75rem",
+                borderRadius: "0 12px 12px 0",
+                border: "2px solid #4caf50",
+                fontSize: "1rem",
+                backgroundColor: "#4caf50",
+                color: "white",
+                cursor: "pointer",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              }}
+            >
+              ✓
+            </button>
+          </div>
         </div>
       </div>
 
@@ -199,7 +279,7 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
           flexDirection: "column",
           gap: "0.5rem" 
         }}>
-          {["author", "from", "difficulty", "id"].map(filterType => {
+          {["author", "from", "difficulty", "id", "section"].map(filterType => {
             const typeTags = tags.filter(tag => tag.type === filterType);
             if (typeTags.length === 0) return null;
             

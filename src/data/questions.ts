@@ -6,6 +6,7 @@ export interface Question {
   from: string;
   difficulty: string;
   questionNumber: number;
+  subSection: string;
 }
 
 export const questions: Question[] = [
@@ -17,7 +18,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 1
+    questionNumber: 1,
+    subSection: "definition of matter"
   },
   {
     id: "def-matter-2",
@@ -26,7 +28,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 2
+    questionNumber: 2,
+    subSection: "definition of matter"
   },
 
   // Chemical Properties questions
@@ -37,7 +40,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 3
+    questionNumber: 3,
+    subSection: "chemical properties"
   },
   {
     id: "chem-props-2",
@@ -46,7 +50,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 4
+    questionNumber: 4,
+    subSection: "chemical properties"
   },
   {
     id: "sub-part-1",
@@ -55,7 +60,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 5
+    questionNumber: 5,
+    subSection: "subatomic particles"
   },
   {
     id: "sub-part-2",
@@ -64,7 +70,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 6
+    questionNumber: 6,
+    subSection: "subatomic particles"
   },
   {
     id: "elec-config-1",
@@ -73,7 +80,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 7
+    questionNumber: 7,
+    subSection: "electronic configuration"
   },
   {
     id: "elec-config-2",
@@ -82,7 +90,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 8
+    questionNumber: 8,
+    subSection: "electronic configuration"
   },
   {
     id: "groups-periods-1",
@@ -91,7 +100,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 9
+    questionNumber: 9,
+    subSection: "groups and periods"
   },
   {
     id: "groups-periods-2",
@@ -100,7 +110,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 10
+    questionNumber: 10,
+    subSection: "groups and periods"
   },
   {
     id: "metals-nonmetals-1",
@@ -109,7 +120,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 11
+    questionNumber: 11,
+    subSection: "metals and nonmetals"
   },
   {
     id: "metals-nonmetals-2",
@@ -118,7 +130,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 12
+    questionNumber: 12,
+    subSection: "metals and nonmetals"
   },
   {
     id: "ionic-bond-1",
@@ -127,7 +140,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 13
+    questionNumber: 13,
+    subSection: "ionic bonding"
   },
   {
     id: "ionic-bond-2",
@@ -136,7 +150,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 14
+    questionNumber: 14,
+    subSection: "ionic bonding"
   },
   {
     id: "covalent-bond-1",
@@ -145,7 +160,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 15
+    questionNumber: 15,
+    subSection: "covalent bonding"
   },
   {
     id: "covalent-bond-2",
@@ -154,7 +170,8 @@ export const questions: Question[] = [
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
-    questionNumber: 16
+    questionNumber: 16,
+    subSection: "covalent bonding"
   },
 ];
 
