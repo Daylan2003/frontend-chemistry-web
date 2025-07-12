@@ -11,6 +11,8 @@ import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
 import GroupsAndPeriods from "./pages/PeriodicTable/GroupsAndPeriods";
 import MetalsAndNonmetals from "./pages/PeriodicTable/MetalsAndNonmetals";
 import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
+import CovalentBonding from "./pages/ChemicalBonding/CovalentBonding";
+import IonicBonding from "./pages/ChemicalBonding/IonicBonding";
 import ChemicalReactions from "./pages/ChemicalReactions/ChemicalReactions";
 import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/MoleConceptAndStoichiometry";
 import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
@@ -43,6 +45,8 @@ function App() {
         <Route path="/periodic-table/groups-and-periods" element={<GroupsAndPeriods />} />
         <Route path="/periodic-table/metals-and-nonmetals" element={<MetalsAndNonmetals />} />
         <Route path="/chemical-bonding" element={<ChemicalBonding />} />
+        <Route path="/chemical-bonding/covalent-bonding" element={<CovalentBonding />} />
+        <Route path="/chemical-bonding/ionic-bonding" element={<IonicBonding />} />
         <Route path="/chemical-reactions" element={<ChemicalReactions />} />
         <Route path="/mole-concept-and-stoichiometry" element={<MoleConceptAndStoichiometry />} />
         <Route path="/acids-and-bases" element={<AcidsAndBases />} />

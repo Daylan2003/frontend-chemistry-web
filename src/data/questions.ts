@@ -13,7 +13,7 @@ export const questions: Question[] = [
   {
     id: "def-matter-1",
     question: "List three states of matter.",
-    prompt: "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then say, Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors",
+    prompt: "Grade the student's answer for listing the three states of matter. If solid, liquid and gas is present, then say, Your answer is correct! Then put the rest of text on a new line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -22,7 +22,7 @@ export const questions: Question[] = [
   {
     id: "def-matter-2",
     question: "Define Matter.",
-    prompt: "Grade the students answer for saying that matter is anything that has mass and volume. They should specify the words volume and mass. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors They should not use synonyms. If not do not have these two words or they have synonyms instead then point this out nicely to them",
+    prompt: "Grade the students answer for saying that matter is anything that has mass and volume. They should specify the words volume and mass. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors They should not use synonyms. If not do not have these two words or they have synonyms instead then point this out nicely to them",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -32,8 +32,8 @@ export const questions: Question[] = [
   // Chemical Properties questions
   {
     id: "chem-props-1",
-    question: "What happens when something changes into another substance ? For example when wood burns.",
-    prompt: "Grade the student for saying that a chemical reaction is happening. Atoms are rearranged and chemical bonds are broken and new ones are formed resulting in new substances being created. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "What happens when something changes into another substance? For example when wood burns.",
+    prompt: "Grade the student for saying that a chemical reaction is happening. Atoms are rearranged and chemical bonds are broken and new ones are formed resulting in new substances being created. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -41,8 +41,8 @@ export const questions: Question[] = [
   },
   {
     id: "chem-props-2",
-    question: "How can you tell if a chemical change is occuring ? For example of metal rusting.",
-    prompt: "Grade the student for saying that you can identify a chemical change by observing a colour change, gas production, formation of a precipitate, a temperature change or light production. If the student does not have all then point this out nicely to them If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "How can you tell if a chemical change is occurring? For example of metal rusting.",
+    prompt: "Grade the student for saying that you can identify a chemical change by observing a colour change, gas production, formation of a precipitate, a temperature change or light production. If the student does not have all then point this out nicely to them. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -51,7 +51,7 @@ export const questions: Question[] = [
   {
     id: "sub-part-1",
     question: "What are the 3 main subatomic particles and what are their charges?",
-    prompt: "Grade the student for saying that the three main subatomic particles are protons, with a charge of +1, neutrons with a charge of 0 and electrons with a charge of -1.  If the student does not have all then point this out nicely to them but if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    prompt: "Grade the student for saying that the three main subatomic particles are protons, with a charge of +1, neutrons with a charge of 0 and electrons with a charge of -1. If the student does not have all then point this out nicely to them but if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -59,8 +59,8 @@ export const questions: Question[] = [
   },
   {
     id: "sub-part-2",
-    question: "Where in the atom are protons, neutrons and electrons located ?",
-    prompt: "Grade the answer for saying that protons and neutrons are located in the nucleus but electrons are located in shells around the nucleus. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "Where in the atom are protons, neutrons and electrons located?",
+    prompt: "Grade the answer for saying that protons and neutrons are located in the nucleus but electrons are located in shells around the nucleus. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -69,7 +69,7 @@ export const questions: Question[] = [
   {
     id: "elec-config-1",
     question: "How many electrons can fit in the first and second energy levels of an atom?",
-    prompt: "Grade the answer for saying that 2 can fit in the first energy level and 8 can fit in the second energy level.  If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    prompt: "Grade the answer for saying that 2 can fit in the first energy level and 8 can fit in the second energy level. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -77,8 +77,8 @@ export const questions: Question[] = [
   },
   {
     id: "elec-config-2",
-    question: "What is the electronic configuration for an atom with 10 electrons ?",
-    prompt: "Grade the answer for saying that there are 2 electrons in the first shell and 8 in the second shell. Or for simply saying 2,8 . If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "What is the electronic configuration for an atom with 10 electrons?",
+    prompt: "Grade the answer for saying that there are 2 electrons in the first shell and 8 in the second shell. Or for simply saying 2,8. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -86,8 +86,8 @@ export const questions: Question[] = [
   },
   {
     id: "groups-periods-1",
-    question: "What is a group on the periodic table ?",
-    prompt: "Grade the answer for saying that it refers to a vertical column of the periodic table.  If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "What is a group on the periodic table?",
+    prompt: "Grade the answer for saying that it refers to a vertical column of the periodic table. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -95,8 +95,8 @@ export const questions: Question[] = [
   },
   {
     id: "groups-periods-2",
-    question: "What is a period on the periodic table ?",
-    prompt: "Grade the answer for saying that is refers to a horizontal row of the periodic table. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. ",
+    question: "What is a period on the periodic table?",
+    prompt: "Grade the answer for saying that it refers to a horizontal row of the periodic table. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -105,7 +105,7 @@ export const questions: Question[] = [
   {
     id: "metals-nonmetals-1",
     question: "Give one difference between a metal and a nonmetal.",
-    prompt: "Grade the answer for saying that metals tend to be hard, shiny, solid, have a high electrical and thermal conductivity and high melting and boiling points. However nonmetals tend to be softer, more colourful, tend to be solids liquids and gases at room temperature, have comparatively lower melting and boiling points. If the student chooses at least one difference,then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling error,s.",
+    prompt: "Grade the answer for saying that metals tend to be hard, shiny, solid, have a high electrical and thermal conductivity and high melting and boiling points. However nonmetals tend to be softer, more colourful, tend to be solids liquids and gases at room temperature, have comparatively lower melting and boiling points. If the student chooses at least one difference, then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
@@ -113,14 +113,49 @@ export const questions: Question[] = [
   },
   {
     id: "metals-nonmetals-2",
-    question: "What property of metals allow them to be good conductors of electricity ?",
-    prompt: "Grade the answer for saying that a sea of valence electrons allow for them to be good conductors of electricity. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "What property of metals allow them to be good conductors of electricity?",
+    prompt: "Grade the answer for saying that a sea of valence electrons allow for them to be good conductors of electricity. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 12
-  }
-
+  },
+  {
+    id: "ionic-bond-1",
+    question: "What is an ionic bond?",
+    prompt: "Grade the answer for saying that an ionic bond is formed when electrons are transferred from one atom to another and that this usually happens between a metal and a nonmetal. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 13
+  },
+  {
+    id: "ionic-bond-2",
+    question: "What happens to the charges of atoms when an ionic bond forms?",
+    prompt: "Grade the answer for saying that the metal becomes positively charged and the nonmetal becomes negatively charged. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 14
+  },
+  {
+    id: "covalent-bond-1",
+    question: "What is a covalent bond?",
+    prompt: "Grade the answer for saying that a covalent bond is formed when two atoms share electrons and that this is usually between nonmetals. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 15
+  },
+  {
+    id: "covalent-bond-2",
+    question: "Give an example of a molecule where a covalent bond exists.",
+    prompt: "Grade the answer for listing at least one valid covalent molecule. If correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 16
+  },
 ];
 
 // Helper function to get questions by ID array
