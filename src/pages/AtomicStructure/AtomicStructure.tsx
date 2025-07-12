@@ -1,4 +1,5 @@
 import React from "react";
+import NavButton from "../../components/NavButton";
 import { useNavigate } from "react-router-dom";
 
 const AtomicStructure: React.FC = () => {
@@ -24,61 +25,19 @@ const AtomicStructure: React.FC = () => {
         }}
       >
         <h2 style={{ margin: "0rem 0 1.5rem 0" }}>Atomic Structure</h2>
-        <div
-          style={{
-            width: "100%",
-            maxWidth: 400,
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-          }}
-        >
-          <button
-            onClick={() => navigate("/atomic-structure/subatomic-particles")}
-            style={{
-              width: "100%",
-              padding: "1.2rem",
-              fontSize: "1.3rem",
-              borderRadius: "12px",
-              border: "none",
-              background: "#E1BEE7",
-              color: "white",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-              cursor: "pointer",
-              transition: "all 0.2s"
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.border = "5px solid white";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.border = "none";
-            }}
-          >
-            Subatomic Particles
-          </button>
-          <button
-            onClick={() => navigate("/atomic-structure/electronic-configuration")}
-            style={{
-              width: "100%",
-              padding: "1.2rem",
-              fontSize: "1.3rem",
-              borderRadius: "12px",
-              border: "none",
-              background: "#E1BEE7",
-              color: "white",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-              cursor: "pointer",
-              transition: "all 0.2s"
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.border = "5px solid white";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.border = "none";
-            }}
-          >
-            Electronic Configuration
-          </button>
+        <div className="button-grid">
+          <NavButton
+            label="Subatomic Particles"
+            to="/atomic-structure/subatomic-particles"
+            color="#7E57C2"
+            navigate={navigate}
+          />
+          <NavButton
+            label="Electronic Configuration"
+            to="/atomic-structure/electronic-configuration"
+            color="#9575CD"
+            navigate={navigate}
+          />
         </div>
       </div>
     </>

@@ -8,6 +8,8 @@ import AtomicStructure from "./pages/AtomicStructure/AtomicStructure";
 import SubatomicParticles from "./pages/AtomicStructure/SubatomicParticles";
 import ElectronicConfiguration from "./pages/AtomicStructure/ElectronicConfiguration";
 import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
+import GroupsAndPeriods from "./pages/PeriodicTable/GroupsAndPeriods";
+import MetalsAndNonmetals from "./pages/PeriodicTable/MetalsAndNonmetals";
 import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
 import ChemicalReactions from "./pages/ChemicalReactions/ChemicalReactions";
 import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/MoleConceptAndStoichiometry";
@@ -38,6 +40,8 @@ function App() {
         <Route path="/atomic-structure/subatomic-particles" element={<SubatomicParticles />} />
         <Route path="/atomic-structure/electronic-configuration" element={<ElectronicConfiguration />} />
         <Route path="/periodic-table" element={<PeriodicTable />} />
+        <Route path="/periodic-table/groups-and-periods" element={<GroupsAndPeriods />} />
+        <Route path="/periodic-table/metals-and-nonmetals" element={<MetalsAndNonmetals />} />
         <Route path="/chemical-bonding" element={<ChemicalBonding />} />
         <Route path="/chemical-reactions" element={<ChemicalReactions />} />
         <Route path="/mole-concept-and-stoichiometry" element={<MoleConceptAndStoichiometry />} />

@@ -83,7 +83,44 @@ export const questions: Question[] = [
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 8
+  },
+  {
+    id: "groups-periods-1",
+    question: "What is a group on the periodic table ?",
+    prompt: "Grade the answer for saying that it refers to a vertical column of the periodic table.  If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 9
+  },
+  {
+    id: "groups-periods-2",
+    question: "What is a period on the periodic table ?",
+    prompt: "Grade the answer for saying that is refers to a horizontal row of the periodic table. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. ",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 10
+  },
+  {
+    id: "metals-nonmetals-1",
+    question: "Give one difference between a metal and a nonmetal.",
+    prompt: "Grade the answer for saying that metals tend to be hard, shiny, solid, have a high electrical and thermal conductivity and high melting and boiling points. However nonmetals tend to be softer, more colourful, tend to be solids liquids and gases at room temperature, have comparatively lower melting and boiling points. If the student chooses at least one difference,then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling error,s.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 11
+  },
+  {
+    id: "metals-nonmetals-2",
+    question: "What property of metals allow them to be good conductors of electricity ?",
+    prompt: "Grade the answer for saying that a sea of valence electrons allow for them to be good conductors of electricity. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 12
   }
+
 ];
 
 // Helper function to get questions by ID array
@@ -99,4 +136,4 @@ export const getQuestionById = (id: string): Question | undefined => {
 // Helper function to get all questions
 export const getAllQuestions = (): Question[] => {
   return questions;
-}; 
+};
