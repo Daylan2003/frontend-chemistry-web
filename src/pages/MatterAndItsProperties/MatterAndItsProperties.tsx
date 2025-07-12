@@ -1,14 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import TopicButton from "../../components/TopicButton";
-
-const buttonLabels = [
-  "Definition of Matter",
-  "Chemical Properties",
-];
+import React, { useState } from "react";
+import QuestionTemplate from "../../components/QuestionTemplate";
+import SearchAndFilter from "../../components/SearchAndFilter";
+import { getQuestionsByIds } from "../../data/questions";
 
 const MatterAndItsProperties: React.FC = () => {
-  const navigate = useNavigate();
+  const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
+
+  // Reference all Matter and Its Properties questions by their IDs
+  const questionIds = ["def-matter-1", "def-matter-2", "chem-props-1", "chem-props-2"];
+  const questions = getQuestionsByIds(questionIds);
 
   return (
     <>
@@ -18,42 +18,38 @@ const MatterAndItsProperties: React.FC = () => {
         style={{
           backgroundColor: "#607D8B",
           minHeight: "100vh",
-          width: "100vw",
+          width: "100%",
           marginTop: "-1px", // Overlap to hide any line
+          padding: "2rem",
           color: "white",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "flex-start",
           boxSizing: "border-box",
-          padding: "2rem",
         }}
       >
-        <h2 style={{ marginBottom: "2rem", marginTop: "-1rem" }}>
-          Matter and Its Properties
-        </h2>
-        <div
-          style={{
-            width: "100%",
-            maxWidth: 400,
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-          }}
-        >
-          <TopicButton
-            label="Definition of Matter"
-            onClick={() =>
-              navigate("/matter-and-its-properties/definition-of-matter")
-            }
+        <h2 style={{ margin: "0rem 0 1.5rem 0" }}>Matter and Its Properties</h2>
+        
+        {/* Search and Filter Component */}
+        <SearchAndFilter 
+          questions={questions}
+          onFilteredQuestionsChange={setFilteredQuestions}
+        />
+
+        {/* Filtered Questions */}
+        {filteredQuestions.map((q, index) => (
+          <QuestionTemplate
+            key={q.id}
+            question={q.question}
+            backgroundColor="#607D8B"
+            prompt={q.prompt}
+            author={q.author}
+            from={q.from}
+            questionNumber={q.questionNumber}
+            id={q.id}
           />
-          <TopicButton
-            label="Chemical Properties"
-            onClick={() =>
-              navigate("/matter-and-its-properties/chemical-properties")
-            }
-          />
-        </div>
+        ))}
       </div>
     </>
   );

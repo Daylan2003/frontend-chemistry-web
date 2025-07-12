@@ -1,9 +1,14 @@
-import React from "react";
-import NavButton from "../../components/NavButton";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import QuestionTemplate from "../../components/QuestionTemplate";
+import SearchAndFilter from "../../components/SearchAndFilter";
+import { getQuestionsByIds } from "../../data/questions";
 
 const AtomicStructure: React.FC = () => {
-  const navigate = useNavigate();
+  const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
+
+  // Reference all Atomic Structure questions by their IDs
+  const questionIds = ["sub-part-1", "sub-part-2", "elec-config-1", "elec-config-2"];
+  const questions = getQuestionsByIds(questionIds);
 
   return (
     <>
@@ -25,20 +30,26 @@ const AtomicStructure: React.FC = () => {
         }}
       >
         <h2 style={{ margin: "0rem 0 1.5rem 0" }}>Atomic Structure</h2>
-        <div className="button-grid">
-          <NavButton
-            label="Subatomic Particles"
-            to="/atomic-structure/subatomic-particles"
-            color="#7E57C2"
-            navigate={navigate}
+        
+        {/* Search and Filter Component */}
+        <SearchAndFilter 
+          questions={questions}
+          onFilteredQuestionsChange={setFilteredQuestions}
+        />
+
+        {/* Filtered Questions */}
+        {filteredQuestions.map((q, index) => (
+          <QuestionTemplate
+            key={q.id}
+            question={q.question}
+            backgroundColor="#673AB7"
+            prompt={q.prompt}
+            author={q.author}
+            from={q.from}
+            questionNumber={q.questionNumber}
+            id={q.id}
           />
-          <NavButton
-            label="Electronic Configuration"
-            to="/atomic-structure/electronic-configuration"
-            color="#9575CD"
-            navigate={navigate}
-          />
-        </div>
+        ))}
       </div>
     </>
   );

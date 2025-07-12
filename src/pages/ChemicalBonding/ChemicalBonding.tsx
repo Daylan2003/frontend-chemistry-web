@@ -1,14 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import TopicButton from "../../components/TopicButton";
-
-const buttonLabels = [
-  "Covalent Bonding",
-  "Ionic Bonding",
-];
+import React, { useState } from "react";
+import QuestionTemplate from "../../components/QuestionTemplate";
+import SearchAndFilter from "../../components/SearchAndFilter";
+import { getQuestionsByIds } from "../../data/questions";
 
 const ChemicalBonding: React.FC = () => {
-  const navigate = useNavigate();
+  const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
+
+  // Reference all Chemical Bonding questions by their IDs
+  const questionIds = ["ionic-bond-1", "ionic-bond-2", "covalent-bond-1", "covalent-bond-2"];
+  const questions = getQuestionsByIds(questionIds);
 
   return (
     <>
@@ -18,42 +18,38 @@ const ChemicalBonding: React.FC = () => {
         style={{
           backgroundColor: "#3F51B5",
           minHeight: "100vh",
-          width: "100vw",
-          marginTop: "-1px", // Overlap to hide any line
+          width: "100%",
+          marginTop: "-1px",
+          padding: "2rem",
           color: "white",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "flex-start",
           boxSizing: "border-box",
-          padding: "2rem",
         }}
       >
-        <h2 style={{ marginBottom: "2rem", marginTop: "-1rem" }}>
-          Chemical Bonding
-        </h2>
-        <div
-          style={{
-            width: "100%",
-            maxWidth: 400,
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-          }}
-        >
-          <TopicButton
-            label="Covalent Bonding"
-            onClick={() =>
-              navigate("/chemical-bonding/covalent-bonding")
-            }
+        <h2 style={{ margin: "0rem 0 1.5rem 0" }}>Chemical Bonding</h2>
+        
+        {/* Search and Filter Component */}
+        <SearchAndFilter 
+          questions={questions}
+          onFilteredQuestionsChange={setFilteredQuestions}
+        />
+
+        {/* Filtered Questions */}
+        {filteredQuestions.map((q, index) => (
+          <QuestionTemplate
+            key={q.id}
+            question={q.question}
+            backgroundColor="#3F51B5"
+            prompt={q.prompt}
+            author={q.author}
+            from={q.from}
+            questionNumber={q.questionNumber}
+            id={q.id}
           />
-          <TopicButton
-            label="Ionic Bonding"
-            onClick={() =>
-              navigate("/chemical-bonding/ionic-bonding")
-            }
-          />
-        </div>
+        ))}
       </div>
     </>
   );

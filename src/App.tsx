@@ -2,17 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import General from "./pages/General/General";
 import MatterAndItsProperties from "./pages/MatterAndItsProperties/MatterAndItsProperties";
-import DefinitionofMatter from "./pages/MatterAndItsProperties/DefinitionofMatter";
-import ChemicalProperties from "./pages/MatterAndItsProperties/ChemicalProperties";
 import AtomicStructure from "./pages/AtomicStructure/AtomicStructure";
-import SubatomicParticles from "./pages/AtomicStructure/SubatomicParticles";
-import ElectronicConfiguration from "./pages/AtomicStructure/ElectronicConfiguration";
 import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
-import GroupsAndPeriods from "./pages/PeriodicTable/GroupsAndPeriods";
-import MetalsAndNonmetals from "./pages/PeriodicTable/MetalsAndNonmetals";
 import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
-import CovalentBonding from "./pages/ChemicalBonding/CovalentBonding";
-import IonicBonding from "./pages/ChemicalBonding/IonicBonding";
 import ChemicalReactions from "./pages/ChemicalReactions/ChemicalReactions";
 import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/MoleConceptAndStoichiometry";
 import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
@@ -36,17 +28,9 @@ function App() {
         <Route path="/general" element={<General />} />
         <Route path="/question-bank" element={<QuestionBank />} />
         <Route path="/matter-and-its-properties" element={<MatterAndItsProperties />} />
-        <Route path="/matter-and-its-properties/definition-of-matter" element={<DefinitionofMatter />} />
-        <Route path="/matter-and-its-properties/chemical-properties" element={<ChemicalProperties />} />
         <Route path="/atomic-structure" element={<AtomicStructure />} />
-        <Route path="/atomic-structure/subatomic-particles" element={<SubatomicParticles />} />
-        <Route path="/atomic-structure/electronic-configuration" element={<ElectronicConfiguration />} />
         <Route path="/periodic-table" element={<PeriodicTable />} />
-        <Route path="/periodic-table/groups-and-periods" element={<GroupsAndPeriods />} />
-        <Route path="/periodic-table/metals-and-nonmetals" element={<MetalsAndNonmetals />} />
         <Route path="/chemical-bonding" element={<ChemicalBonding />} />
-        <Route path="/chemical-bonding/covalent-bonding" element={<CovalentBonding />} />
-        <Route path="/chemical-bonding/ionic-bonding" element={<IonicBonding />} />
         <Route path="/chemical-reactions" element={<ChemicalReactions />} />
         <Route path="/mole-concept-and-stoichiometry" element={<MoleConceptAndStoichiometry />} />
         <Route path="/acids-and-bases" element={<AcidsAndBases />} />
