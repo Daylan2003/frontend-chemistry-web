@@ -173,6 +173,47 @@ export const questions: Question[] = [
     questionNumber: 16,
     subSection: "covalent bonding"
   },
+    {
+    id: "types-reactions-1",
+    question: "What is a synthesis reaction ?",
+    prompt: "Grade the answer for saying that it is a reaction where two or more substances combine to form a new substance. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 17,
+    subSection: "Types of Chemical Reactions"
+  },
+  {
+    id: "types-reactions-2",
+    question: "What is a decomposition reaction ?",
+    prompt: "Grade the answer for saying that it is a reaction where one compound breaks down into two or more substances. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 18,
+    subSection: "Types of Chemical Reactions"
+  },
+  {
+    id: "reactants-products-1",
+    question: "In a chemical reaction what is the difference between a reactant and a product ?",
+    prompt: "Grade the answer fo saying that reactants are the starting substances and that products are the new substances formed after the reaction. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 19,
+    subSection: "Reactions and Products"
+  },
+  {
+    id: "reactants-products-2",
+    question: "In the reaction: H₂ + O₂ → H₂O, which are the reactants and which is the product?",
+    prompt: "Grade the answer for saying that the reactants are H2 and O2 and the products are H2O. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 20,
+    subSection: "Reactions and Products"
+  },
+
 ];
 
 // Helper function to get questions by ID array
