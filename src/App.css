@@ -101,6 +101,13 @@
   .nav-button {
     border-width: 3px;
   }
+  
+  .search-input-mobile {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 /* Hover effect: white border and black text */
@@ -167,6 +174,21 @@
   }
   .hamburger-line {
     height: 4px !important;
+  }
+}
+
+@media (pointer: coarse) and (max-width: 600px) {
+  .search-input-mobile {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (pointer: coarse) and (min-width: 601px) {
+  .search-input-mobile {
+    max-width: none;
   }
 }
 
