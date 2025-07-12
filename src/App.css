@@ -50,7 +50,9 @@
   width: min(90vw, 600px);
   margin: 35vh auto 0.15rem auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* On desktop: min 3, max 5 columns */
@@ -92,6 +94,13 @@
   border-radius: 20px;
   color: white;
   transition: border 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Mobile-specific border width */
+@media (pointer: coarse) {
+  .nav-button {
+    border-width: 3px;
+  }
 }
 
 /* Hover effect: white border and black text */

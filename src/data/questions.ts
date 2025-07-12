@@ -47,6 +47,17 @@ export const questions: Question[] = [
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 4
+  },
+
+  // Subatomic Particles questions
+  {
+    id: "subatomic-1",
+    question: "What are the three main subatomic particles found in an atom?",
+    prompt: "Grade the student for correctly identifying the three main subatomic particles: protons, neutrons, and electrons. If correct then say Your answer is correct! Then put the rest of text on a new line. At the end, skip a line a say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 5
   }
 ];
 

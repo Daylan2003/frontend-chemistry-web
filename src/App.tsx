@@ -5,6 +5,8 @@ import MatterAndItsProperties from "./pages/MatterAndItsProperties/MatterAndItsP
 import DefinitionofMatter from "./pages/MatterAndItsProperties/DefinitionofMatter";
 import ChemicalProperties from "./pages/MatterAndItsProperties/ChemicalProperties";
 import AtomicStructure from "./pages/AtomicStructure/AtomicStructure";
+import SubatomicParticles from "./pages/AtomicStructure/SubatomicParticles";
+import ElectronicConfiguration from "./pages/AtomicStructure/ElectronicConfiguration";
 import PeriodicTable from "./pages/PeriodicTable/PeriodicTable";
 import ChemicalBonding from "./pages/ChemicalBonding/ChemicalBonding";
 import ChemicalReactions from "./pages/ChemicalReactions/ChemicalReactions";
@@ -13,6 +15,7 @@ import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
 import GasesAndGasLaws from "./pages/GasesAndGasLaws/GasesAndGasLaws";
 import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndSolubility";
 import LaboratoryWork from "./pages/LaboratoryWork";
+import QuestionBank from "./pages/QuestionBank";
 import Header from "./components/Header";
 import BackButton from "./components/BackButton";
 import "./App.css";
@@ -27,10 +30,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/general" element={<General />} />
+        <Route path="/question-bank" element={<QuestionBank />} />
         <Route path="/matter-and-its-properties" element={<MatterAndItsProperties />} />
         <Route path="/matter-and-its-properties/definition-of-matter" element={<DefinitionofMatter />} />
         <Route path="/matter-and-its-properties/chemical-properties" element={<ChemicalProperties />} />
         <Route path="/atomic-structure" element={<AtomicStructure />} />
+        <Route path="/atomic-structure/subatomic-particles" element={<SubatomicParticles />} />
+        <Route path="/atomic-structure/electronic-configuration" element={<ElectronicConfiguration />} />
         <Route path="/periodic-table" element={<PeriodicTable />} />
         <Route path="/chemical-bonding" element={<ChemicalBonding />} />
         <Route path="/chemical-reactions" element={<ChemicalReactions />} />
