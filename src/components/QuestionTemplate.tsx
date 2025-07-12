@@ -7,6 +7,8 @@ interface QuestionTemplateProps {
   prompt?: string; // Add this line
   author?: string;
   from?: string;
+  questionNumber?: number;
+  id?: string;
 }
 
 // ... imports and interface remain the same
@@ -17,6 +19,8 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   author = "Unknown",
   from = "Unknown",
   prompt,
+  questionNumber = 0,
+  id,
 }) => {
   const [answer, setAnswer] = useState<string>("");
   const [result, setResult] = useState<string>("");
@@ -61,7 +65,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         marginTop: "2.5rem",
         background: "rgba(255,255,255,0.08)",
         borderRadius: "16px",
-        padding: "1.5rem 2rem",
+        padding: "1.5rem 2rem 3rem 2rem",
         maxWidth: 600,
         width: "100%",
         boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
@@ -84,6 +88,20 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         }}
       >
         EASY
+      </div>
+
+      {/* Question ID */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "1.1rem",
+          left: "2rem",
+          color: "white",
+          fontWeight: "bold",
+          fontSize: "0.9rem",
+        }}
+      >
+        ID: {id}
       </div>
 
       <div style={{ marginBottom: "0.5rem", fontSize: "1rem", color: "#e0e0e0" }}>
