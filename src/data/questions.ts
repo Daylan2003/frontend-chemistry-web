@@ -173,35 +173,35 @@ export const questions: Question[] = [
     questionNumber: 16,
     subSection: "covalent bonding"
   },
-    {
+  {
     id: "types-reactions-1",
-    question: "What is a synthesis reaction ?",
+    question: "What is a synthesis reaction?",
     prompt: "Grade the answer for saying that it is a reaction where two or more substances combine to form a new substance. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "INTERMEDIATE",
     questionNumber: 17,
-    subSection: "Types of Chemical Reactions"
+    subSection: "types of chemical reactions"
   },
   {
     id: "types-reactions-2",
-    question: "What is a decomposition reaction ?",
+    question: "What is a decomposition reaction?",
     prompt: "Grade the answer for saying that it is a reaction where one compound breaks down into two or more substances. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "INTERMEDIATE",
     questionNumber: 18,
-    subSection: "Types of Chemical Reactions"
+    subSection: "types of chemical reactions"
   },
   {
     id: "reactants-products-1",
-    question: "In a chemical reaction what is the difference between a reactant and a product ?",
-    prompt: "Grade the answer fo saying that reactants are the starting substances and that products are the new substances formed after the reaction. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    question: "In a chemical reaction what is the difference between a reactant and a product?",
+    prompt: "Grade the answer for saying that reactants are the starting substances and that products are the new substances formed after the reaction. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 19,
-    subSection: "Reactions and Products"
+    subSection: "reactants and products"
   },
   {
     id: "reactants-products-2",
@@ -211,9 +211,48 @@ export const questions: Question[] = [
     from: "Canada",
     difficulty: "EASY",
     questionNumber: 20,
-    subSection: "Reactions and Products"
+    subSection: "reactants and products"
   },
-
+  {
+    id: "moles-1",
+    question: "What is one mole of a substance?",
+    prompt: "Grade the answer on saying that one mole contains 6.022x10^23 particles of a substance. Also saying that this number is Avogadro's number. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 21,
+    subSection: "moles"
+  },
+  {
+    id: "moles-2",
+    question: "How many atoms are in 1 mole of carbon?",
+    prompt: "Grade the answer on saying that 1 mole of Carbon contains 6.022x10^23 atoms. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 22,
+    subSection: "moles"
+  },
+  {
+    id: "stoichiometry-1",
+    question: "In a chemical equation what do the coefficients in front of substances represent?",
+    prompt: "Grade the answer for saying that they represent the number of moles of each substances involved in the reaction. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 23,
+    subSection: "stoichiometry"
+  },
+  {
+    id: "stoichiometry-2",
+    question: "If the reaction is: 2H₂ + O₂ → 2H₂O, how many moles of water are formed when 2 moles of hydrogen react completely?",
+    prompt: "Grade the answer for saying that 2 moles of H2 produce 2 moles of H2O. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 24,
+    subSection: "stoichiometry"
+  },
 ];
 
 // Helper function to get questions by ID array
