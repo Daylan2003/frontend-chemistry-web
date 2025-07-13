@@ -373,6 +373,47 @@ export const questions: Question[] = [
     questionNumber: 36,
     subSection: "Solubility Factors"
   },
+    {
+    id: "safety-equipment-1",
+    question: "Name two important lab safety rules",
+    prompt: "Grade the students answer on listing any 2 valid lab safety rules within reason. If correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 37,
+    subSection: "Lab Safety and Equipment"
+  },
+  {
+    id: "safety-equipment-2",
+    question: "What is a beaker used for ?",
+    prompt: "Grade for saying that a beaker is used to hold, mix or heat liquids. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 38,
+    subSection: "Lab Safety and Equipment"
+  },
+  {
+    id: "measurement-observation-1",
+    question: "Between a graduated cylinder, beaker or test tube, which piece of equipment gives the most accurate measurement ?",
+    prompt: "Grade the answer for saying that the graduated cylinder gives the most accurate measurement. If the student does not have this, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 39,
+    subSection: "Measurement and Observation"
+  },
+  {
+    id: "measurement-observation-2",
+    question: "If a chemical is accidentally spilt in the lab, as a student, what is the first thing that should be done ? ",
+    prompt: "Grade the answer for the student saying any valid procedure such as telling the teacher or lab supervisor",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 40,
+    subSection: "Measurement and Observation"
+  },
+
 
 
 

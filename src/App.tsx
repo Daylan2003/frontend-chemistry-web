@@ -10,7 +10,7 @@ import MoleConceptAndStoichiometry from "./pages/MoleConceptAndStoichiometry/Mol
 import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
 import GasesAndGasLaws from "./pages/GasesAndGasLaws/GasesAndGasLaws";
 import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndSolubility";
-import LaboratoryWork from "./pages/LaboratoryWork";
+import LaboratoryWork from "./pages/LabratoryWork/LaboratoryWork";
 import QuestionBank from "./pages/QuestionBank";
 import Header from "./components/Header";
 import BackButton from "./components/BackButton";
