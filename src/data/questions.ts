@@ -293,6 +293,47 @@ export const questions: Question[] = [
     questionNumber: 28,
     subSection: "acids and bases reactions"
   },
+    {
+    id: "properties-gases-1",
+    question: "Name 2 properties of gases",
+    prompt: "Grade the answer for saying that gases have no fixed shape or volume and they can be compressed easily. If the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 29,
+    subSection: "Properties of Gases"
+  },
+  {
+    id: "properties-gases-2",
+    question: "Why do gases of a low density ?",
+    prompt: "Grade the answer for saying that the reason is because the particles in gases are very far apart. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 30,
+    subSection: "Properties of Gases"
+  },
+  {
+    id: "boyles-charles-1",
+    question: "According to Boyle’s Law, what happens to the pressure of a gas when the volume decreases, assuming temperature stays the same?",
+    prompt: "Grade the answer for saying that the pressure increases as the volume decreases. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 31,
+    subSection: "Boyle’s and Charles’s Law"
+  },
+  {
+    id: "boyles-charles-2",
+    question: "What does Charles’s Law say about the relationship between temperature and volume of a gas?",
+    prompt: "Grade the answer for saying that as temperature increases, the volume increases but only if the pressure if kept constant. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 32,
+    subSection: "Boyle’s and Charles’s Law"
+  },
+
 
 ];
 
