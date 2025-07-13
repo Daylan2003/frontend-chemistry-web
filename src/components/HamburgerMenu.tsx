@@ -203,11 +203,10 @@ const HamburgerMenu: React.FC = () => {
               &times;
             </button>
             <div style={{ width: "100%", textAlign: "left", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem", overflowY: "auto", maxHeight: "70vh" }}>
-              <h2>About This Website</h2>
-              <p>This is some arbitrary text about the website. You can put any information you want here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+              <h2>About IKnowChemistry</h2>
+              <p>Welcome to IKnowChemistry — a website designed to help high school and secondary school students build confidence and improve their understanding of chemistry.</p>
+              <p>Here, you'll find a wide range of practice questions that are searchable by topic, difficulty level, or even by author. Whether you're just starting out or reviewing for exams, this platform makes it easy to find the right kind of support.</p>
+              <p>Most of the questions on this site are graded with the help of AI. When you submit an answer (outside of the general questions section), it's sent to an AI system that compares your response with key points and keywords from an expert-written solution prompt — crafted by me. This allows for fast, helpful, and personalized feedback on your chemistry answers.</p>
             </div>
           </div>
         </div>
@@ -258,12 +257,9 @@ const HamburgerMenu: React.FC = () => {
             >
               &times;
             </button>
-            <div style={{ width: "100%", textAlign: "left", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem", overflowY: "auto", maxHeight: "70vh" }}>
+            <div style={{ width: "100%", textAlign: "center", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem", overflowY: "auto", maxHeight: "70vh" }}>
               <h2>Submit a Question</h2>
-              <p>This is where you can submit a question. You can put any information you want here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+              <p style={{ fontSize: "2rem", fontWeight: "bold", color: "#666", marginTop: "2rem" }}>Coming Soon...</p>
             </div>
           </div>
         </div>
