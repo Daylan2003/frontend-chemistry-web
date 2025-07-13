@@ -305,7 +305,7 @@ export const questions: Question[] = [
   },
   {
     id: "properties-gases-2",
-    question: "Why do gases of a low density ?",
+    question: "Why do gases have a low density ?",
     prompt: "Grade the answer for saying that the reason is because the particles in gases are very far apart. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
     author: "Daylan",
     from: "Canada",
@@ -333,6 +333,47 @@ export const questions: Question[] = [
     questionNumber: 32,
     subSection: "Boyle’s and Charles’s Law"
   },
+    {
+    id: "components-solution-1",
+    question: "What is a solute and what is a solvent ?",
+    prompt: "Grade the answer for saying that a solute is the substance that dissolves and the solvent is the substance that does the dissolving.If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. ",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 33,
+    subSection: "Components of a Solution"
+  },
+  {
+    id: "components-solution-2",
+    question: "In salt water, which is the solute and which is the solvent ?",
+    prompt: "Grade the answer for saying that salt is the solute and water is the solvent. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 34,
+    subSection: "Components of a Solution"
+  },
+  {
+    id: "solubility-factors-1",
+    question: "How does temperature affect the solubility of most solids in water ?",
+    prompt: "Grade the answer for saying that that an increase of temperature usually increases the solubility of most solids in water. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 35,
+    subSection: "Solubility Factors"
+  },
+  {
+    id: "solubility-factors-2",
+    question: "What happens to the solubility of a gas in a liquid when the temperature increases?",
+    prompt: "Grade the answer for saying that the solubility of a gas in a liquid decreases when temperature increases. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors.",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "INTERMEDIATE",
+    questionNumber: 36,
+    subSection: "Solubility Factors"
+  },
+
 
 
 ];
