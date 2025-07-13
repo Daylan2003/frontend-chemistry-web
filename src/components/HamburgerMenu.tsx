@@ -257,9 +257,35 @@ const HamburgerMenu: React.FC = () => {
             >
               &times;
             </button>
-            <div style={{ width: "100%", textAlign: "center", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem", overflowY: "auto", maxHeight: "70vh" }}>
+            <div style={{ width: "100%", textAlign: "left", color: "#222", fontSize: "1.25rem", marginTop: "2.5rem", overflowY: "auto", maxHeight: "70vh" }}>
               <h2>Submit a Question</h2>
-              <p style={{ fontSize: "2rem", fontWeight: "bold", color: "#666", marginTop: "2rem" }}>Coming Soon...</p>
+              <p style={{ marginBottom: "1.5rem" }}>
+                To submit your own question, please send the question and the correct answer to <strong>dadinodeveloper@gmail.com</strong>
+              </p>
+              
+              <p style={{ marginBottom: "1rem" }}>
+                <strong>Here is an example:</strong> (You don't have to fill in all areas)
+              </p>
+              
+              <div style={{ 
+                background: "#f5f5f5", 
+                padding: "1.5rem", 
+                borderRadius: "12px", 
+                border: "2px solid #e0e0e0",
+                marginBottom: "1.5rem"
+              }}>
+                <h3 style={{ marginTop: "0", color: "#333" }}>Question 1 Example:</h3>
+                <p><strong>Question:</strong> List three states of matter.</p>
+                <p><strong>Correct Answer:</strong> The three states of matter are solid, liquid, and gas.</p>
+                <p><strong>Author:</strong> Daylan</p>
+                <p><strong>From:</strong> Canada</p>
+                <p><strong>Difficulty:</strong> EASY</p>
+                <p><strong>Subsection:</strong> definition of matter</p>
+              </div>
+              
+              <p style={{ fontSize: "1rem", color: "#666" }}>
+                We'll review your submission and may add it to our question bank to help other students!
+              </p>
             </div>
           </div>
         </div>

@@ -41,15 +41,14 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
     setResult("");
 
     try {
-      const response = await axios.post("https://backend-chemistry-web.onrender.com/grade", {
-        question,
-        students_answer: answer,
-        prompt,
+      // Use the new chemistry answer endpoint for general questions
+      const response = await axios.post("https://backend-chemistry-web.onrender.com/answer-chemistry", {
+        question: answer,
       });
 
-      setResult(response.data.result);
+      setResult(response.data.answer || "No answer returned.");
     } catch (error) {
-      setResult("An error occurred while grading.");
+      setResult("An error occurred while getting the answer.");
     }
 
     setLoading(false);
@@ -115,7 +114,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
       </div>
 
       <textarea
-        placeholder="Enter student's answer"
+        placeholder="Enter your chemistry question here"
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         style={{
@@ -149,7 +148,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
             transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
-          {loading ? "Grading..." : "Grade Answer"}
+          {loading ? "Getting Answer..." : "Get Answer"}
         </button>
 
         <button
@@ -194,7 +193,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         {result}
       </pre>
 
-      <button
+              <button
           onClick={clearResult}
           onMouseDown={() => setClearFeedbackPressed(true)}
           onMouseUp={() => setClearFeedbackPressed(false)}
@@ -212,7 +211,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
             transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
-          Clear Feedback
+          Clear Answer
         </button>
     </div>
   );
