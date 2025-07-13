@@ -1,10 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const General: React.FC = () => {
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    // Update document title and meta tags for SEO
+    document.title = "Ask Chemistry Questions - AI Chemistry Tutor | I Know Chemistry";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Ask any chemistry question and get instant AI-powered answers. Free chemistry tutor for high school students. Get help with atomic structure, reactions, stoichiometry, acids & bases, and more chemistry topics.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'Ask any chemistry question and get instant AI-powered answers. Free chemistry tutor for high school students. Get help with atomic structure, reactions, stoichiometry, acids & bases, and more chemistry topics.';
+      document.head.appendChild(newMetaDescription);
+    }
+
+    // Add keywords meta tag
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      const newMetaKeywords = document.createElement('meta');
+      newMetaKeywords.name = 'keywords';
+      newMetaKeywords.content = 'ask chemistry questions, chemistry tutor, AI chemistry help, chemistry homework help, chemistry answers, chemistry Q&A, chemistry study help, chemistry problem solver';
+      document.head.appendChild(newMetaKeywords);
+    }
+
+    // Add Open Graph meta tags for social media
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      const newOgTitle = document.createElement('meta');
+      newOgTitle.setAttribute('property', 'og:title');
+      newOgTitle.content = 'Ask Chemistry Questions - AI Chemistry Tutor';
+      document.head.appendChild(newOgTitle);
+    }
+
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      const newOgDescription = document.createElement('meta');
+      newOgDescription.setAttribute('property', 'og:description');
+      newOgDescription.content = 'Get instant answers to any chemistry question with our AI tutor. Perfect for high school students and homework help.';
+      document.head.appendChild(newOgDescription);
+    }
+
+    const ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      const newOgType = document.createElement('meta');
+      newOgType.setAttribute('property', 'og:type');
+      newOgType.content = 'website';
+      document.head.appendChild(newOgType);
+    }
+
+    // Add canonical URL
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      const newCanonical = document.createElement('link');
+      newCanonical.rel = 'canonical';
+      newCanonical.href = window.location.href;
+      document.head.appendChild(newCanonical);
+    }
+
+  }, []);
 
   const handleAsk = async () => {
     setLoading(true);
