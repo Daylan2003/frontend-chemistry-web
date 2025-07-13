@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "I Know Chemistry",
+  "name": "I Know Chemistry - Chemistry Practice Questions",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "website-icon-atom.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "website-icon-atom.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "website-icon-atom.png",
       "type": "image/png",
       "sizes": "512x512"
     }
