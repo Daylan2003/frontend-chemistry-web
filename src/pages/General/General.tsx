@@ -110,6 +110,7 @@ const General: React.FC = () => {
             from={q.from}
             questionNumber={q.questionNumber}
             id={q.id}
+            isGeneralQuestion={true}
           />
         ))}
       </div>

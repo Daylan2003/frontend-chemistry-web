@@ -4,11 +4,12 @@ import axios from "axios";
 interface QuestionTemplateProps {
   question: string;
   backgroundColor: string;
-  prompt?: string; // Add this line
+  prompt?: string;
   author?: string;
   from?: string;
   questionNumber?: number;
   id?: string;
+  isGeneralQuestion?: boolean; // Add this to distinguish between general Q&A and grading
 }
 
 // ... imports and interface remain the same
@@ -21,6 +22,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   prompt,
   questionNumber = 0,
   id,
+  isGeneralQuestion = false,
 }) => {
   const [answer, setAnswer] = useState<string>("");
   const [result, setResult] = useState<string>("");
@@ -41,14 +43,23 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
     setResult("");
 
     try {
-      // Use the new chemistry answer endpoint for general questions
-      const response = await axios.post("https://backend-chemistry-web.onrender.com/answer-chemistry", {
-        question: answer,
-      });
-
-      setResult(response.data.answer || "No answer returned.");
+      if (isGeneralQuestion) {
+        // Use the chemistry answer endpoint for general questions
+        const response = await axios.post("https://backend-chemistry-web.onrender.com/answer-chemistry", {
+          question: answer,
+        });
+        setResult(response.data.answer || "No answer returned.");
+      } else {
+        // Use the grading endpoint for regular questions
+        const response = await axios.post("https://backend-chemistry-web.onrender.com/grade", {
+          question,
+          students_answer: answer,
+          prompt,
+        });
+        setResult(response.data.result);
+      }
     } catch (error) {
-      setResult("An error occurred while getting the answer.");
+      setResult(isGeneralQuestion ? "An error occurred while getting the answer." : "An error occurred while grading.");
     }
 
     setLoading(false);
@@ -114,7 +125,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
       </div>
 
       <textarea
-        placeholder="Enter your chemistry question here"
+        placeholder={isGeneralQuestion ? "Enter your chemistry question here" : "Enter student's answer"}
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         style={{
@@ -148,7 +159,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
             transition: "background 0.15s, border 0.15s, color 0.15s",
           }}
         >
-          {loading ? "Getting Answer..." : "Get Answer"}
+          {loading ? (isGeneralQuestion ? "Getting Answer..." : "Grading...") : (isGeneralQuestion ? "Get Answer" : "Grade Answer")}
         </button>
 
         <button
