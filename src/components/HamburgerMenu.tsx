@@ -115,19 +115,6 @@ const HamburgerMenu: React.FC = () => {
               </li>
               <li style={{ margin: "32px 0" }}>
                 <a
-                  href="/about"
-                  style={{
-                    textDecoration: "none",
-                    color: "#333",
-                    fontSize: "2rem",
-                  }}
-                  onClick={e => { e.preventDefault(); setAboutOpen(true); }}
-                >
-                  About
-                </a>
-              </li>
-              <li style={{ margin: "32px 0" }}>
-                <a
                   href="/contact"
                   style={{
                     textDecoration: "none",
@@ -137,6 +124,19 @@ const HamburgerMenu: React.FC = () => {
                   onClick={e => { e.preventDefault(); setSubmitQuestionOpen(true); }}
                 >
                   Submit a Question
+                </a>
+              </li>
+              <li style={{ margin: "32px 0" }}>
+                <a
+                  href="/about"
+                  style={{
+                    textDecoration: "none",
+                    color: "#333",
+                    fontSize: "2rem",
+                  }}
+                  onClick={e => { e.preventDefault(); setAboutOpen(true); }}
+                >
+                  About
                 </a>
               </li>
               <li style={{ margin: "32px 0" }}>

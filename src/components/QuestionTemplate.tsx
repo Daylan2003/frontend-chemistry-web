@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
 interface QuestionTemplateProps {
   question: string;
@@ -68,6 +70,28 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
   // ✅ New clear handlers
   const clearAnswer = () => setAnswer("");
   const clearResult = () => setResult("");
+
+  // Function to render text with math expressions
+  const renderTextWithMath = (text: string) => {
+    if (!text) return null;
+    
+    // Split text by LaTeX delimiters
+    const parts = text.split(/(\$[^$]+\$)/);
+    
+    return parts.map((part, index) => {
+      if (part.startsWith('$') && part.endsWith('$')) {
+        // Extract the math expression
+        const mathExpr = part.slice(1, -1);
+        try {
+          return <InlineMath key={index} math={mathExpr} />;
+        } catch (error) {
+          // If KaTeX fails to parse, return the original text
+          return <span key={index}>{part}</span>;
+        }
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
 
   return (
     <div
@@ -184,7 +208,7 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         </button>
       </div>
 
-      <pre
+      <div
         style={{
           marginTop: "1rem",
           background: "#f5f5f5",
@@ -199,10 +223,11 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
           overflowX: "auto",                //  Horizontal scrollbar if still too long
           maxHeight: "300px",               //  Optional: cap height & make scrollable
           overflowY: "auto",                //  Vertical scrollbar if content is long
+          lineHeight: "1.5",
         }}
       >
-        {result}
-      </pre>
+        {renderTextWithMath(result)}
+      </div>
 
               <button
           onClick={clearResult}
