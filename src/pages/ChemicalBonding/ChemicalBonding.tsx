@@ -8,7 +8,22 @@ const ChemicalBonding: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Chemical Bonding questions by their IDs
-  const questionIds = ["ionic-bond-1", "ionic-bond-2", "covalent-bond-1", "covalent-bond-2"];
+  const questionIds = [
+    "ionic-bond-1", 
+    "ionic-bond-2", 
+    "covalent-bond-1", 
+    "covalent-bond-2",
+    "chemical-bonding-1",
+    "chemical-bonding-4",
+    "chemical-bonding-5",
+    "chemical-bonding-6",
+    "chemical-bonding-7",
+    "chemical-bonding-8",
+    "chemical-bonding-9",
+    "chemical-bonding-10",
+    "chemical-bonding-11",
+    "chemical-bonding-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

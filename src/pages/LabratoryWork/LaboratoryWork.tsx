@@ -8,7 +8,10 @@ const LaboratoryWork: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Laboratory Work questions by their IDs
-  const questionIds = ["safety-equipment-1", "safety-equipment-2", "measurement-observation-1", "measurement-observation-2"];
+  const questionIds = [
+    "safety-equipment-1", "safety-equipment-2", "measurement-observation-1", "measurement-observation-2",
+    "labwork-1", "labwork-2", "labwork-3", "labwork-4", "labwork-5", "labwork-6", "labwork-7", "labwork-8", "labwork-9", "labwork-10", "labwork-11", "labwork-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

@@ -8,7 +8,22 @@ const MoleConceptAndStoichiometry: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Mole Concept and Stoichiometry questions by their IDs
-  const questionIds = ["moles-1", "moles-2", "stoichiometry-1", "stoichiometry-2"];
+  const questionIds = [
+    "moles-1", 
+    "moles-2", 
+    "stoichiometry-1", 
+    "stoichiometry-2",
+    "mole-stoich-3",
+    "mole-stoich-4",
+    "mole-stoich-5",
+    "mole-stoich-6",
+    "mole-stoich-7",
+    "mole-stoich-8",
+    "mole-stoich-9",
+    "mole-stoich-10",
+    "mole-stoich-11",
+    "mole-stoich-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

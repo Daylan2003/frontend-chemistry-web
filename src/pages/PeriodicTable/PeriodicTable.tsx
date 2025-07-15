@@ -8,7 +8,21 @@ const PeriodicTable: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Periodic Table questions by their IDs
-  const questionIds = ["groups-periods-1", "groups-periods-2", "metals-nonmetals-1", "metals-nonmetals-2"];
+  const questionIds = [
+    "groups-periods-1", 
+    "groups-periods-2", 
+    "metals-nonmetals-1", 
+    "metals-nonmetals-2",
+    "periodic-table-1",
+    "periodic-table-3", 
+    "periodic-table-5",
+    "periodic-table-6",
+    "periodic-table-8",
+    "periodic-table-9",
+    "periodic-table-10",
+    "periodic-table-11",
+    "periodic-table-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

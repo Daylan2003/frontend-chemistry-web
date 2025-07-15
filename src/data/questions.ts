@@ -175,16 +175,697 @@ export const questions: Question[] = [
   },
   
   
-  
-  
-  
-  
-  
-  
-  
+  {
+    id: "periodic-table-1",
+    question: "What is the periodic table?",
+    prompt: "Grade the student's answer. A good answer describes the periodic table as an arrangement of elements based on their atomic number and properties. Accept simple definitions but correct inaccurate or off-topic information.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 1,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-3",
+    question: "What do elements in the same group (column) have in common?",
+    prompt: "Grade the student's answer. Elements in the same group have similar chemical properties and the same number of valence electrons.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 2,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-5",
+    question: "Where are the metals located on the periodic table?",
+    prompt: "Grade the student's answer. Metals are mostly found on the left and center of the periodic table. Accept general descriptions but correct major errors.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-6",
+    question: "Where are the nonmetals located on the periodic table?",
+    prompt: "Grade the student's answer. Nonmetals are mostly found on the right side of the periodic table (except hydrogen). Make sure they identify this general area.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 4,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-7",
+    question: "What is a group on the periodic table?",
+    prompt: "Grade the student's answer. A group is a vertical column of elements with similar properties and the same number of valence electrons.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 5,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-8",
+    question: "What are valence electrons?",
+    prompt: "Grade the student's answer. Valence electrons are the outermost electrons of an atom and are involved in chemical bonding.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-9",
+    question: "What are metalloids and where are they found on the periodic table?",
+    prompt: "Grade the student's answer. Metalloids have properties of both metals and nonmetals and are found along the staircase line dividing metals and nonmetals.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 7,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-10",
+    question: "What is the general trend for reactivity in Group 1 elements?",
+    prompt: "Grade the student's answer. Group 1 (alkali metals) become more reactive as you move down the group.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-11",
+    question: "What is the general trend in atomic size across a period?",
+    prompt: "Grade the student's answer. Atomic size decreases from left to right across a period due to increased nuclear charge pulling electrons in closer.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "periodic table"
+  },
+  {
+    id: "periodic-table-12",
+    question: "What is the general trend in electronegativity across a period?",
+    prompt: "Grade the student's answer. Electronegativity increases across a period from left to right. Accept explanations that describe attraction to electrons or chemical bonding.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 10,
+    subSection: "periodic table"
+  },
   
 
-  // Chemical Properties questions
+  {
+    id: "chemical-bonding-1",
+    question: "What is a chemical bond?",
+    prompt: "Grade the student's answer. A chemical bond is a force that holds atoms together in compounds. Accept basic definitions but clarify inaccuracies or vague wording.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 1,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-4",
+    question: "What is the difference between ionic and covalent bonds?",
+    prompt: "Grade the student's answer. Ionic bonds involve transfer of electrons while covalent bonds involve sharing of electrons. Accept concise summaries.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 2,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-5",
+    question: "What types of elements form ionic bonds?",
+    prompt: "Grade the student's answer. Ionic bonds form between metals and nonmetals. Be sure they recognize this specific pairing.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 3,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-6",
+    question: "What types of elements form covalent bonds?",
+    prompt: "Grade the student's answer. Covalent bonds form between nonmetal atoms. Accept this concept if phrased clearly.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 4,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-7",
+    question: "Why do atoms bond with each other?",
+    prompt: "Grade the student's answer. Atoms bond to achieve a full outer shell of electrons and become more stable. Mention of stability or octet rule is acceptable.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 5,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-8",
+    question: "What is a molecule?",
+    prompt: "Grade the student's answer. A molecule is a group of atoms bonded together, typically by covalent bonds. Accept clear and concise answers.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 6,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-9",
+    question: "What is a compound?",
+    prompt: "Grade the student's answer. A compound is a substance made of two or more different elements chemically bonded together. Clarify if the explanation is too vague.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 7,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-10",
+    question: "What is the octet rule?",
+    prompt: "Grade the student's answer. The octet rule states that atoms tend to bond in a way that they each have eight electrons in their outer shell. Accept general explanations if they refer to stability or full outer shells.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-11",
+    question: "What is a polar covalent bond?",
+    prompt: "Grade the student's answer. A polar covalent bond is when electrons are shared unequally between atoms, causing partial charges. Accept answers that mention unequal sharing or polarity.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "chemical bonding"
+  },
+  {
+    id: "chemical-bonding-12",
+    question: "What is a metallic bond?",
+    prompt: "Grade the student's answer. A metallic bond is the attraction between free-floating valence electrons and positively charged metal ions. Accept simplified versions that mention 'electron sea' or sharing among metal atoms.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 10,
+    subSection: "chemical bonding"
+  },
+
+
+
+  {
+    id: "chemical-reactions-1",
+    question: "What is a chemical reaction?",
+    prompt: "Grade the student's answer. A chemical reaction is a process where substances change to form new substances with different properties. Accept variations if the core idea is clear.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 1,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-2",
+    question: "What are some signs that a chemical reaction has occurred?",
+    prompt: "Grade the student's answer. Common signs include color change, gas production, temperature change, formation of a precipitate, or light emission. Accept two or more correct signs.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 2,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-3",
+    question: "What is the difference between a physical change and a chemical change?",
+    prompt: "Grade the student's answer. A chemical change forms new substances, while a physical change does not. Accept concise or basic versions of this distinction.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-5",
+    question: "What is a chemical equation?",
+    prompt: "Grade the student's answer. A chemical equation represents a chemical reaction using symbols and formulas for reactants and products. Accept brief explanations if accurate.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 4,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-6",
+    question: "Why do chemical reactions need to be balanced?",
+    prompt: "Grade the student's answer. Chemical equations must be balanced to follow the Law of Conservation of Mass. The number of atoms of each element must be the same on both sides.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 5,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-7",
+    question: "What is the Law of Conservation of Mass?",
+    prompt: "Grade the student's answer. The Law of Conservation of Mass states that mass is neither created nor destroyed in a chemical reaction. Accept basic but correct definitions.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 6,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-8",
+    question: "What is an exothermic reaction?",
+    prompt: "Grade the student's answer. An exothermic reaction releases heat or energy to the surroundings. Accept examples like combustion.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 7,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-9",
+    question: "What is an endothermic reaction?",
+    prompt: "Grade the student's answer. An endothermic reaction absorbs energy from its surroundings. Accept examples like photosynthesis or melting ice.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 8,
+    subSection: "chemical reactions"
+  },
+  {
+    id: "chemical-reactions-10",
+    question: "What are catalysts and what do they do in a reaction?",
+    prompt: "Grade the student's answer. A catalyst speeds up a chemical reaction without being used up in the process. Accept simple versions that mention speed or reaction rate.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "chemical reactions"
+  },
+
+
+  {
+    id: "mole-stoich-3",
+    question: "How do you calculate molar mass?",
+    prompt: "Grade the student's answer. Molar mass is calculated by adding the atomic masses of all atoms in a compound. Accept responses that involve adding up atomic weights from the periodic table.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 1,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-4",
+    question: "How do you convert from grams to moles?",
+    prompt: "Grade the student's answer. To convert grams to moles, divide the mass by the molar mass of the substance. Accept simplified calculations or examples.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 2,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-5",
+    question: "What is the molar volume of a gas at STP?",
+    prompt: "Grade the student's answer. At standard temperature and pressure (STP), the molar volume of a gas is 22.4 L per mole. Accept brief but correct answers.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-6",
+    question: "What does a balanced chemical equation tell you about moles?",
+    prompt: "Grade the student's answer. A balanced equation shows the mole ratio of reactants and products. Accept answers that mention proportions or stoichiometric coefficients.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 4,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-7",
+    question: "How do you use mole ratios to solve stoichiometry problems?",
+    prompt: "Grade the student's answer. Use the coefficients in the balanced equation to set up mole ratios and solve for unknowns. Accept partial answers that show clear understanding.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 5,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-8",
+    question: "What is the empirical formula of a compound?",
+    prompt: "Grade the student's answer. The empirical formula is the simplest whole-number ratio of atoms in a compound. Accept examples to support explanation.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-9",
+    question: "What is the molecular formula and how is it different from the empirical formula?",
+    prompt: "Grade the student's answer. The molecular formula shows the actual number of atoms of each element, while the empirical formula is the simplest ratio. Accept responses that compare the two.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 7,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-10",
+    question: "How do you calculate percent composition of a compound?",
+    prompt: "Grade the student's answer. Divide the total mass of each element by the molar mass of the compound and multiply by 100%. Accept correct examples and simplified methods.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-11",
+    question: "What is a limiting reactant?",
+    prompt: "Grade the student's answer. The limiting reactant is the substance that runs out first and limits the amount of product formed. Accept examples that clearly show this.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "mole concept and stoichiometry"
+  },
+  {
+    id: "mole-stoich-12",
+    question: "How do you calculate theoretical yield?",
+    prompt: "Grade the student's answer. Theoretical yield is calculated from the limiting reactant using stoichiometric ratios. Accept explanations that follow correct steps.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 10,
+    subSection: "mole concept and stoichiometry"
+  },
+
+  {
+    id: "acids-bases-2",
+    question: "What are common properties of acids?",
+    prompt: "Grade the student's answer. Acids typically taste sour, turn blue litmus paper red, and react with metals and carbonates. Accept examples or mentions of pH values below 7.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 1,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-3",
+    question: "What are common properties of bases?",
+    prompt: "Grade the student's answer. Bases usually taste bitter, feel slippery, turn red litmus paper blue, and have a pH above 7. Accept examples like soap or baking soda.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 2,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-4",
+    question: "What is pH and what does it measure?",
+    prompt: "Grade the student's answer. pH is a scale that measures the concentration of hydrogen ions in a solution. It ranges from 0 to 14, with acids having low pH and bases having high pH.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-5",
+    question: "How does litmus paper indicate acidity or basicity?",
+    prompt: "Grade the student's answer. Blue litmus turns red in acidic solutions, and red litmus turns blue in basic solutions. Accept simple explanations that show this understanding.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 4,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-7",
+    question: "What are strong and weak acids?",
+    prompt: "Grade the student's answer. Strong acids completely dissociate in water, while weak acids only partially dissociate. Accept examples like HCl for strong and acetic acid for weak.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 5,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-8",
+    question: "What are strong and weak bases?",
+    prompt: "Grade the student's answer. Strong bases completely dissociate in water, while weak bases only partially dissociate. Examples include NaOH (strong) and NH₃ (weak).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-9",
+    question: "How do you calculate pH from H+ concentration?",
+    prompt: "Grade the student's answer. pH is calculated using the formula pH = -log[H+]. Accept examples of calculation or simplified explanations if correct.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 7,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-10",
+    question: "How does dilution affect the pH of an acid?",
+    prompt: "Grade the student's answer. Diluting an acid decreases its concentration and increases its pH (making it less acidic). Accept correct general reasoning.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-11",
+    question: "What is a buffer solution and what does it do?",
+    prompt: "Grade the student's answer. A buffer solution resists changes in pH when small amounts of acid or base are added. Accept examples like blood or acetic acid and sodium acetate.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "acids and bases"
+  },
+  {
+    id: "acids-bases-12",
+    question: "What is the difference between concentration and strength of an acid?",
+    prompt: "Grade the student's answer. Strength refers to how completely an acid dissociates, while concentration refers to how much acid is present in a solution. Accept clear comparisons.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 10,
+    subSection: "acids and bases"
+  },
+
+  {
+    id: "gases-laws-4",
+    question: "State the ideal gas law equation and define each variable.",
+    prompt: "Grade the student's answer. The ideal gas law is PV = nRT, where P = pressure, V = volume, n = moles of gas, R = gas constant, and T = temperature in Kelvin.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 1,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-5",
+    question: "What is the combined gas law?",
+    prompt: "Grade the student's answer. The combined gas law is (P1×V1)/T1 = (P2×V2)/T2. It combines Boyle's, Charles's, and Gay-Lussac's laws and shows the relationship between pressure, volume, and temperature.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 2,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-6",
+    question: "What conditions cause real gases to deviate from ideal gas behavior?",
+    prompt: "Grade the student's answer. Real gases deviate at high pressure and low temperature, where intermolecular forces and the volume of gas particles become significant.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-7",
+    question: "What is the relationship between temperature and kinetic energy of gas particles?",
+    prompt: "Grade the student's answer. The kinetic energy of gas particles increases with temperature. This means faster movement and more collisions at higher temperatures.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 4,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-8",
+    question: "What is Avogadro's Law?",
+    prompt: "Grade the student's answer. Avogadro's Law states that equal volumes of gases at the same temperature and pressure contain the same number of particles (or moles).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 5,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-9",
+    question: "How does gas pressure change when volume is decreased?",
+    prompt: "Grade the student's answer. As volume decreases, gas particles collide more often with the container walls, increasing pressure, assuming temperature is constant (Boyle's Law).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 6,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-10",
+    question: "What units are typically used in gas law calculations?",
+    prompt: "Grade the student's answer. Units include pressure in atm or kPa, volume in liters (L), temperature in Kelvin (K), and quantity in moles.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 7,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-11",
+    question: "How is the ideal gas constant (R) chosen based on units?",
+    prompt: "Grade the student's answer. The value of R depends on the units used: 0.0821 L·atm/mol·K for atm and liters, or 8.314 J/mol·K for SI units.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "gases and gas laws"
+  },
+  {
+    id: "gases-laws-12",
+    question: "Why is Kelvin used instead of Celsius in gas laws?",
+    prompt: "Grade the student's answer. Kelvin is used because gas law equations require absolute temperature to avoid zero or negative values, which are not physically meaningful for volume and pressure.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 9,
+    subSection: "gases and gas laws"
+  },
+
+  {
+    id: "solutions-1",
+    question: "What is a solution in chemistry?",
+    prompt: "Grade the student's answer. A solution is a homogeneous mixture composed of two or more substances, where one substance (solute) is dissolved in another (solvent).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 1,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-3",
+    question: "What factors affect the solubility of a substance?",
+    prompt: "Grade the student's answer. Factors include temperature, pressure (for gases), and the nature of the solute and solvent (like polarity).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-5",
+    question: "What is concentration and how is it commonly expressed?",
+    prompt: "Grade the student's answer. Concentration refers to the amount of solute in a given quantity of solvent or solution. It is often expressed in molarity (mol/L).\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 5,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-6",
+    question: "What is a saturated solution?",
+    prompt: "Grade the student's answer. A saturated solution contains the maximum amount of solute that can dissolve at a given temperature. Any additional solute will remain undissolved.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-7",
+    question: "Describe what happens in a supersaturated solution.",
+    prompt: "Grade the student's answer. A supersaturated solution temporarily contains more dissolved solute than it should at that temperature. It is unstable and can crystallize easily.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 7,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-8",
+    question: "What does 'like dissolves like' mean?",
+    prompt: "Grade the student's answer. 'Like dissolves like' means that polar solvents dissolve polar solutes and nonpolar solvents dissolve nonpolar solutes due to similar intermolecular forces.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 8,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-9",
+    question: "How is molarity calculated?",
+    prompt: "Grade the student's answer. Molarity is calculated using the formula M = moles of solute / liters of solution.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 9,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-10",
+    question: "What is the effect of pressure on the solubility of gases in liquids?",
+    prompt: "Grade the student's answer. Increasing pressure increases the solubility of gases in liquids. This is described by Henry's Law.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 10,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-11",
+    question: "What is dilution and how does it affect concentration?",
+    prompt: "Grade the student's answer. Dilution is the process of adding solvent to a solution to decrease the concentration of the solute.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 11,
+    subSection: "solutions and solubility"
+  },
+  {
+    id: "solutions-12",
+    question: "What is the difference between a concentrated and a dilute solution?",
+    prompt: "Grade the student's answer. A concentrated solution has a large amount of solute relative to solvent, while a dilute solution has a small amount of solute relative to solvent.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 12,
+    subSection: "solutions and solubility"
+  },
+
   {
     id: "chem-props-1",
     question: "What happens when something changes into another substance? For example when wood burns.",
@@ -467,23 +1148,23 @@ export const questions: Question[] = [
   },
   {
     id: "boyles-charles-1",
-    question: "According to Boyle’s Law, what happens to the pressure of a gas when the volume decreases, assuming temperature stays the same?",
+    question: "According to Boyle's Law, what happens to the pressure of a gas when the volume decreases, assuming temperature stays the same?",
     prompt: "Grade the answer for saying that the pressure increases as the volume decreases. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
     author: "Daylan",
     from: "Canada",
     difficulty: "INTERMEDIATE",
     questionNumber: 31,
-    subSection: "Boyle’s and Charles’s Law"
+    subSection: "Boyle's and Charles's Law"
   },
   {
     id: "boyles-charles-2",
-    question: "What does Charles’s Law say about the relationship between temperature and volume of a gas?",
+    question: "What does Charles's Law say about the relationship between temperature and volume of a gas?",
     prompt: "Grade the answer for saying that as temperature increases, the volume increases but only if the pressure if kept constant. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. At the end, skip a line and say Keep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
     author: "Daylan",
     from: "Canada",
     difficulty: "INTERMEDIATE",
     questionNumber: 32,
-    subSection: "Boyle’s and Charles’s Law"
+    subSection: "Boyle's and Charles's Law"
   },
     {
     id: "components-solution-1",
@@ -565,6 +1246,127 @@ export const questions: Question[] = [
     questionNumber: 40,
     subSection: "Measurement and Observation"
   },
+
+  {
+    "id": "labwork-1",
+    "question": "Why is it important to wear safety goggles during a chemistry lab?",
+    "prompt": "Grade the student's answer. Safety goggles protect the eyes from chemical splashes, broken glass, or harmful vapors.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 1,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-2",
+    "question": "What should you do if a chemical spill occurs in the lab?",
+    "prompt": "Grade the student's answer. A correct answer mentions notifying the teacher, using spill kits or absorbents, and following safety protocols.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "MEDIUM",
+    "questionNumber": 2,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-3",
+    "question": "Why must you never pipette by mouth?",
+    "prompt": "Grade the student's answer. Because ingesting or inhaling chemicals is dangerous. Mouth pipetting risks contamination and exposure.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 3,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-4",
+    "question": "Why is it important to label all test tubes and beakers?",
+    "prompt": "Grade the student's answer. Labeling prevents mix-ups, ensures correct identification, and maintains safety.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 4,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-5",
+    "question": "Why is it necessary to read the volumetric markings at the bottom of the meniscus in graduations?",
+    "prompt": "Grade the student's answer. Read at the lowest point of meniscus at eye level to ensure accurate volume measurement.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "MEDIUM",
+    "questionNumber": 5,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-6",
+    "question": "What is the proper way to dilute a strong acid into water safely?",
+    "prompt": "Grade the student's answer. Always add acid slowly into water, never the reverse, to prevent exothermic splashes.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "MEDIUM",
+    "questionNumber": 6,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-7",
+    "question": "Describe how to properly dispose of chemical waste in the lab.",
+    "prompt": "Grade the student's answer. Use correct labeled containers, follow teacher or school protocols, do not pour down sinks unless allowed.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "MEDIUM",
+    "questionNumber": 7,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-8",
+    "question": "Explain why you should not block the lab door while working?",
+    "prompt": "Grade the student's answer. Blocking the exit is a safety hazard; in emergencies clear pathways are essential.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 8,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-9",
+    "question": "Why might a student be asked to tie back long hair and secure loose clothing?",
+    "prompt": "Grade the student's answer. To prevent contact with flames, chemicals, or entanglement—reducing injury risk.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 9,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-10",
+    "question": "Why should you never taste chemicals in the lab?",
+    "prompt": "Grade the student's answer. Tasting can introduce toxic or harmful substances into the body—never safe to ingest chemicals.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 10,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-11",
+    "question": "What is the purpose of a Bunsen burner flame test safety flame?",
+    "prompt": "Grade the student's answer. Use the safety (yellow) flame when not heating to prevent accidents, and use blue flame only when needed.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "MEDIUM",
+    "questionNumber": 11,
+    "subSection": "laboratory work"
+  },
+  {
+    "id": "labwork-12",
+    "question": "Why must you always clean your workspace and wash your hands after a lab session?",
+    "prompt": "Grade the student's answer. Cleaning removes residues; hand‑washing prevents chemical contact and cross‑contamination.\n\nIf the student lists any other 2 valid safety practices still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out‑of‑topic information anywhere point out the part which is wrong to them please",
+    "author": "Daylan",
+    "from": "Canada",
+    "difficulty": "EASY",
+    "questionNumber": 12,
+    "subSection": "laboratory work"
+  }
 
 
 

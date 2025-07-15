@@ -8,7 +8,20 @@ const AcidsAndBases: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Acids and Bases questions by their IDs
-  const questionIds = ["acids-bases-1", "acids-bases-2", "acids-bases-3", "acids-bases-reactions-1"];
+  const questionIds = [
+    "acids-bases-1", 
+    "acids-bases-2", 
+    "acids-bases-3", 
+    "acids-bases-reactions-1",
+    "acids-bases-4",
+    "acids-bases-5",
+    "acids-bases-7",
+    "acids-bases-8",
+    "acids-bases-9",
+    "acids-bases-10",
+    "acids-bases-11",
+    "acids-bases-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

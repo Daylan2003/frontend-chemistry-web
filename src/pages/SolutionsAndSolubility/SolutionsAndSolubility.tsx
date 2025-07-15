@@ -8,7 +8,22 @@ const SolutionsAndSolubility: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Solutions and Solubility questions by their IDs
-  const questionIds = ["components-solution-1", "components-solution-2", "solubility-factors-1", "solubility-factors-2"];
+  const questionIds = [
+    "components-solution-1", 
+    "components-solution-2", 
+    "solubility-factors-1", 
+    "solubility-factors-2",
+    "solutions-1",
+    "solutions-3",
+    "solutions-5",
+    "solutions-6",
+    "solutions-7",
+    "solutions-8",
+    "solutions-9",
+    "solutions-10",
+    "solutions-11",
+    "solutions-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

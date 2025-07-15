@@ -8,7 +8,21 @@ const ChemicalReactions: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Chemical Reactions questions by their IDs
-  const questionIds = ["types-reactions-1", "types-reactions-2", "reactants-products-1", "reactants-products-2"];
+  const questionIds = [
+    "types-reactions-1", 
+    "types-reactions-2", 
+    "reactants-products-1", 
+    "reactants-products-2",
+    "chemical-reactions-1",
+    "chemical-reactions-2",
+    "chemical-reactions-3",
+    "chemical-reactions-5",
+    "chemical-reactions-6",
+    "chemical-reactions-7",
+    "chemical-reactions-8",
+    "chemical-reactions-9",
+    "chemical-reactions-10"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {

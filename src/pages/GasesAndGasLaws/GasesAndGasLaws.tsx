@@ -8,7 +8,21 @@ const GasesAndGasLaws: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Gases and Gas Laws questions by their IDs
-  const questionIds = ["properties-gases-1", "properties-gases-2", "boyles-charles-1", "boyles-charles-2"];
+  const questionIds = [
+    "properties-gases-1", 
+    "properties-gases-2", 
+    "boyles-charles-1", 
+    "boyles-charles-2",
+    "gases-laws-4",
+    "gases-laws-5",
+    "gases-laws-6",
+    "gases-laws-7",
+    "gases-laws-8",
+    "gases-laws-9",
+    "gases-laws-10",
+    "gases-laws-11",
+    "gases-laws-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {
