@@ -2,12 +2,24 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const MatterAndItsProperties: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Matter and Its Properties questions by their IDs
-  const questionIds = ["def-matter-1", "def-matter-2", "chem-props-1", "chem-props-2"];
+  const questionIds = [
+    "def-matter-1", 
+    "def-matter-2", 
+    "def-matter-3", 
+    "def-matter-4", 
+    "def-matter-5", 
+    "def-matter-6", 
+    "def-matter-8", 
+    "def-matter-10", 
+    "chem-props-1", 
+    "chem-props-2"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {
@@ -72,6 +84,7 @@ const MatterAndItsProperties: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#423838" />
       {/* Colored bar below header, unique to this page */}
       <div style={{ height: "30vh", width: "100vw", background: "#607D8B" }} />
       <div
@@ -95,6 +108,7 @@ const MatterAndItsProperties: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#423838"
         />
 
         {/* Filtered Questions */}
@@ -102,7 +116,7 @@ const MatterAndItsProperties: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#607D8B"
+            backgroundColor="#423838"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

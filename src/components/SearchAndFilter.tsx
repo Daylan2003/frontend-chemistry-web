@@ -14,14 +14,16 @@ interface Question {
 interface SearchAndFilterProps {
   questions: Question[];
   onFilteredQuestionsChange: (filteredQuestions: Question[]) => void;
+  questionTemplateColor?: string;
 }
 
-const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFilteredQuestionsChange }) => {
+const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFilteredQuestionsChange, questionTemplateColor = "#009688" }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterBy, setFilterBy] = useState("author");
   const [filterValue, setFilterValue] = useState("");
   const [sectionFilter, setSectionFilter] = useState("");
   const [tags, setTags] = useState<{type: string, value: string}[]>([]);
+  const [isHowItWorksExpanded, setIsHowItWorksExpanded] = useState(false);
 
   const handleAddTag = () => {
     if (filterValue.trim() && !tags.some(tag => tag.type === filterBy && tag.value === filterValue.trim())) {
@@ -101,6 +103,102 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
       flexDirection: "column",
       gap: "1rem"
     }}>
+      {/* How This Works Section */}
+      <div style={{
+        marginBottom: "1rem",
+        width: "100%"
+      }}>
+        <div
+          onClick={() => setIsHowItWorksExpanded(!isHowItWorksExpanded)}
+          style={{
+            backgroundColor: questionTemplateColor,
+            border: `2px solid ${questionTemplateColor}`,
+            borderRadius: "12px",
+            padding: "1rem 1.5rem",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            color: "white",
+            fontSize: "1.1rem",
+            fontWeight: "500"
+          }}
+        >
+          <span>How does the A.I. work?</span>
+          <span style={{
+            fontSize: "1.5rem",
+            transition: "transform 0.3s ease",
+            transform: isHowItWorksExpanded ? "rotate(180deg)" : "rotate(0deg)"
+          }}>
+            ▼
+          </span>
+        </div>
+        
+        {isHowItWorksExpanded && (
+          <div style={{
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            border: "2px solid rgba(255, 255, 255, 0.2)",
+            borderTop: "none",
+            borderRadius: "0 0 12px 12px",
+            padding: "1.5rem",
+            color: "white",
+            fontSize: "1rem",
+            lineHeight: "1.6"
+          }}>
+            <div style={{
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              border: "1px solid rgba(255, 255, 255, 0.3)",
+              borderRadius: "8px",
+              padding: "1rem",
+              marginBottom: "1.5rem"
+            }}>
+              <h4 style={{ 
+                margin: "0 0 0.5rem 0", 
+                color: "#ffeb3b", 
+                fontSize: "1.1rem",
+                fontWeight: "600"
+              }}>
+                Common Misconception
+              </h4>
+              <p style={{ margin: "0", fontSize: "0.95rem", opacity: "0.9" }}>
+                The A.I. does not work the same way as common LLM
+              </p>
+            </div>
+            
+            <p style={{ 
+              margin: "0 0 1rem 0", 
+              fontSize: "1.1rem",
+              fontWeight: "600",
+              color: "#4caf50"
+            }}>
+              Instead this is how it works:
+            </p>
+            
+            <p style={{ margin: "0 0 1rem 0" }}>
+              Our AI-powered chemistry tutor uses advanced natural language processing to analyze your answers and provide personalized feedback. Here's how it works:
+            </p>
+            <ul style={{ margin: "0", paddingLeft: "1.5rem" }}>
+              <li style={{ marginBottom: "0.5rem" }}>
+                <strong>Smart Analysis:</strong> The AI compares your answer against expert-written solution prompts that contain key concepts and terminology.
+              </li>
+              <li style={{ marginBottom: "0.5rem" }}>
+                <strong>Personalized Feedback:</strong> You receive specific feedback on what you got right, what needs improvement, and suggestions for better understanding.
+              </li>
+              <li style={{ marginBottom: "0.5rem" }}>
+                <strong>Comprehensive Review:</strong> The system checks for accuracy, completeness, and even points out any incorrect or off-topic information.
+              </li>
+              <li style={{ marginBottom: "0.5rem" }}>
+                <strong>Learning Focus:</strong> Feedback is designed to help you understand concepts better, not just get the right answer.
+              </li>
+            </ul>
+            <p style={{ margin: "1rem 0 0 0", fontSize: "0.9rem", opacity: "0.8" }}>
+              Simply type your answer and click "Grade Answer" to get instant, helpful feedback from our AI chemistry tutor!
+            </p>
+          </div>
+        )}
+      </div>
+
       {/* Search Input */}
       <div style={{ flex: 1 }}>
         <input
@@ -114,11 +212,11 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
             minWidth: "200px",
             padding: "0.75rem 1rem",
             borderRadius: "12px",
-            border: "2px solid #b0bec5",
+            border: `2px solid ${questionTemplateColor}`,
             fontSize: "1rem",
             backgroundColor: "white",
             color: "#333",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
           }}
         />
       </div>
@@ -161,11 +259,11 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
                 width: "100%",
                 padding: "0.75rem 1rem",
                 borderRadius: "12px 0 0 12px",
-                border: "2px solid #b0bec5",
+                border: `2px solid ${questionTemplateColor}`,
                 fontSize: "1rem",
                 backgroundColor: "white",
                 color: "#333",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               }}
             >
               <option value="author">By Author</option>
@@ -187,11 +285,11 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
                 padding: "0.8rem 1rem",
                 borderRadius: "0 12px 12px 0",
                 borderLeft: "none",
-                border: "2px solid #b0bec5",
+                border: `2px solid ${questionTemplateColor}`,
                 fontSize: "1rem",
                 backgroundColor: "white",
                 color: "#333",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               }}
             />
           </div>
@@ -205,12 +303,12 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
                 height: "97%",
                 padding: "0.75rem",
                 borderRadius: "0 12px 12px 0",
-                border: "2px solid #4caf50",
+                border: `2px solid ${questionTemplateColor}`,
                 fontSize: "1rem",
                 backgroundColor: "#4caf50",
                 color: "white",
                 cursor: "pointer",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               }}
             >
               ✓
@@ -233,11 +331,11 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
                 width: "100%",
                 padding: "0.75rem 1rem",
                 borderRadius: "12px 0 0 12px",
-                border: "2px solid #b0bec5",
+                border: `2px solid ${questionTemplateColor}`,
                 fontSize: "1rem",
                 backgroundColor: "white",
                 color: "#333",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               }}
             >
               <option value="">Select Sub-Section...</option>
@@ -258,12 +356,13 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({ questions, onFiltered
                 height: "97%",
                 padding: "0.75rem",
                 borderRadius: "0 12px 12px 0",
-                border: "2px solid #4caf50",
+                border: `2px solid ${questionTemplateColor}`,
+                borderLeft: "none",
                 fontSize: "1rem",
                 backgroundColor: "#4caf50",
                 color: "white",
                 cursor: "pointer",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               }}
             >
               ✓

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const LaboratoryWork: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const LaboratoryWork: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#255e27" />
       <div style={{ height: "30vh", width: "100vw", background: "#388E3C" }} />
       <div
         style={{
@@ -94,6 +96,7 @@ const LaboratoryWork: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#255e27"
         />
 
         {/* Filtered Questions */}
@@ -101,7 +104,7 @@ const LaboratoryWork: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#388E3C"
+            backgroundColor="#255e27"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

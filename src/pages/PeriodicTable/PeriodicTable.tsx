@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const PeriodicTable: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const PeriodicTable: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#087280" />
       {/* Colored bar below header, unique to this page */}
       <div style={{ height: "30vh", width: "100vw", background: "#00BCD4" }} />
       <div
@@ -95,6 +97,7 @@ const PeriodicTable: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#087280"
         />
 
         {/* Filtered Questions */}
@@ -102,7 +105,7 @@ const PeriodicTable: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#00BCD4"
+            backgroundColor="#087280"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

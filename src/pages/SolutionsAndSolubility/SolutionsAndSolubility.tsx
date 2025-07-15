@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const SolutionsAndSolubility: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const SolutionsAndSolubility: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#2980b9" />
       <div style={{ height: "30vh", width: "100vw", background: "#2980b9" }} />
       <div
         style={{
@@ -94,6 +96,7 @@ const SolutionsAndSolubility: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#2980b9"
         />
 
         {/* Filtered Questions */}

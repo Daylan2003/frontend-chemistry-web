@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const ChemicalBonding: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const ChemicalBonding: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#2a3675" />
       {/* Colored bar below header, unique to this page */}
       <div style={{ height: "30vh", width: "100vw", background: "#3F51B5" }} />
       <div
@@ -95,6 +97,7 @@ const ChemicalBonding: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#2a3675"
         />
 
         {/* Filtered Questions */}
@@ -102,7 +105,7 @@ const ChemicalBonding: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#3F51B5"
+            backgroundColor="#2a3675"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

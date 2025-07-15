@@ -31,6 +31,158 @@ export const questions: Question[] = [
     questionNumber: 2,
     subSection: "definition of matter"
   },
+  {
+    id: "def-matter-3",
+    question: "Describe how particles behave in a gas compared to a solid.",
+    prompt: "Grade the student's answer by checking if they describe gas particles as far apart and moving freely, and solid particles as closely packed and vibrating in place. Only say Your answer is correct! if both parts are described properly.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 3,
+    subSection: "states of matter"
+  },
+  {
+    id: "def-matter-4",
+    question: "Name two physical properties of matter.",
+    prompt: "Grade the student's answer. Common physical properties include color, mass, volume, density, boiling point, melting point, etc.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. \n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 4,
+    subSection: "properties of matter"
+  },
+  {
+    id: "def-matter-5",
+    question: "What is the difference between a physical and chemical property?",
+    prompt: "Grade the student's answer. A correct answer should say that physical properties can be observed without changing the substance, while chemical properties involve the ability to change into a new substance. \n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. \n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 5,
+    subSection: "properties of matter"
+  },
+  {
+    id: "def-matter-6",
+    question: "Is density a physical or chemical property? Explain your answer.",
+    prompt: "Grade the student's answer. Density is a physical property. Look for the explanation that density can be measured without changing the substance.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. \n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "properties of matter"
+  },
+  {
+    id: "def-matter-8",
+    question: "What is the difference between an element and a compound?",
+    prompt: "Grade the student's answer. Elements are made of one type of atom. Compounds are made of two or more elements chemically bonded. Look for both parts.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. \n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 7,
+    subSection: "classification of matter"
+  },
+  {
+    id: "def-matter-10",
+    question: "What is a physical change? Give one example.",
+    prompt: "Grade the student's answer. A physical change does not produce a new substance. Examples include melting, boiling, breaking, etc.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line. \n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 8,
+    subSection: "changes in matter"
+  },
+  
+  
+  {
+    id: "atomic-structure-4",
+    question: "What is the relative mass of an electron compared to a proton?",
+    prompt: "Grade the student's answer. An electron is about 1/1836 the mass of a proton. Accept explanations that say it is much smaller or negligible.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 4,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-5",
+    question: "What does the atomic number of an element represent?",
+    prompt: "Grade the student's answer. The atomic number represents the number of protons in an atom. This defines the element.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 5,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-6",
+    question: "What is the mass number of an atom?",
+    prompt: "Grade the student's answer. The mass number is the total number of protons and neutrons in the nucleus.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 6,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-7",
+    question: "How do you calculate the number of neutrons in an atom?",
+    prompt: "Grade the student's answer. Subtract the atomic number from the mass number: neutrons = mass number - atomic number.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 7,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-8",
+    question: "What is an isotope?",
+    prompt: "Grade the student's answer. An isotope is an atom with the same number of protons but a different number of neutrons.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 8,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-9",
+    question: "What particle determines the identity of an element?",
+    prompt: "Grade the student's answer. The correct answer is protons, as the number of protons (atomic number) defines the element.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "EASY",
+    questionNumber: 9,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-10",
+    question: "Why is an atom electrically neutral?",
+    prompt: "Grade the student's answer. Atoms are neutral because they have equal numbers of protons and electrons. Check for understanding.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "MEDIUM",
+    questionNumber: 10,
+    subSection: "atomic structure"
+  },
+  {
+    id: "atomic-structure-12",
+    question: "What happens when an electron gains energy?",
+    prompt: "Grade the student's answer. The correct idea is that the electron jumps to a higher energy level. If they mention excited state or leaving the ground state, that's excellent.\n\nIf the student lists any other 2 valid properties still give them it correct. If the student does not have all, then point this out nicely to them but only if correct then say Your answer is correct! Then skip a line.\n\nKeep up the Good Work! If there are spelling errors still give the answer correct but point out the spelling errors. Even if the student has all the correct information, if they have wrong or out of topic information anywhere point out the part which is wrong to them please",
+    author: "Daylan",
+    from: "Canada",
+    difficulty: "HARD",
+    questionNumber: 11,
+    subSection: "atomic structure"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   // Chemical Properties questions
   {

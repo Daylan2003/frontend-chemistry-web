@@ -2,12 +2,26 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const AtomicStructure: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
 
   // Reference all Atomic Structure questions by their IDs
-  const questionIds = ["sub-part-1", "sub-part-2", "elec-config-1", "elec-config-2"];
+  const questionIds = [
+    "sub-part-1", 
+    "sub-part-2", 
+    "elec-config-1", 
+    "elec-config-2",
+    "atomic-structure-4",
+    "atomic-structure-5", 
+    "atomic-structure-6",
+    "atomic-structure-7",
+    "atomic-structure-8",
+    "atomic-structure-9",
+    "atomic-structure-10",
+    "atomic-structure-12"
+  ];
   const questions = getQuestionsByIds(questionIds);
 
   useEffect(() => {
@@ -72,6 +86,7 @@ const AtomicStructure: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#422675" />
       {/* Colored bar below header, unique to this page */}
       <div style={{ height: "30vh", width: "100vw", background: "#673AB7" }} />
       <div
@@ -95,6 +110,7 @@ const AtomicStructure: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#422675"
         />
 
         {/* Filtered Questions */}
@@ -102,7 +118,7 @@ const AtomicStructure: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#673AB7"
+            backgroundColor="#422675"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

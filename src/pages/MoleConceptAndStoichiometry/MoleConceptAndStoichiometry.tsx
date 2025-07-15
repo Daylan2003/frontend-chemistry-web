@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const MoleConceptAndStoichiometry: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const MoleConceptAndStoichiometry: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#96740e" />
       <div style={{ height: "30vh", width: "100vw", background: "#FFC107" }} />
       <div
         style={{
@@ -94,6 +96,7 @@ const MoleConceptAndStoichiometry: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#96740e"
         />
 
         {/* Filtered Questions */}
@@ -101,7 +104,7 @@ const MoleConceptAndStoichiometry: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#FFC107"
+            backgroundColor="#96740e"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

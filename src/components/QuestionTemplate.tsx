@@ -97,12 +97,12 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
     <div
       style={{
         marginTop: "2.5rem",
-        background: "rgba(255,255,255,0.08)",
+        background: backgroundColor,
         borderRadius: "16px",
         padding: "1.5rem 2rem 3rem 2rem",
         maxWidth: 600,
         width: "100%",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
         position: "relative",
       }}
     >
@@ -229,26 +229,27 @@ const QuestionTemplate: React.FC<QuestionTemplateProps> = ({
         {renderTextWithMath(result)}
       </div>
 
-              <button
-          onClick={clearResult}
-          onMouseDown={() => setClearFeedbackPressed(true)}
-          onMouseUp={() => setClearFeedbackPressed(false)}
-          onMouseEnter={() => setClearFeedbackHover(true)}
-          onMouseLeave={() => { setClearFeedbackPressed(false); setClearFeedbackHover(false); }}
-          style={{
-            padding: "0.5rem 1rem",
-            borderRadius: "12px",
-            border: clearFeedbackHover ? "2px solid white" : "2px solid #b0bec5",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-            background: clearFeedbackPressed ? "#ff1744" : "#b71c1c",
-            color: clearFeedbackHover ? "white" : "white",
-            cursor: "pointer",
-            fontWeight: "bold",
-            transition: "background 0.15s, border 0.15s, color 0.15s",
-          }}
-        >
-          Clear Answer
-        </button>
+      <button
+        onClick={clearResult}
+        onMouseDown={() => setClearFeedbackPressed(true)}
+        onMouseUp={() => setClearFeedbackPressed(false)}
+        onMouseEnter={() => setClearFeedbackHover(true)}
+        onMouseLeave={() => { setClearFeedbackPressed(false); setClearFeedbackHover(false); }}
+        style={{
+          marginTop: "1.5rem",
+          padding: "0.5rem 1rem",
+          borderRadius: "12px",
+          border: clearFeedbackHover ? "2px solid white" : "2px solid #b0bec5",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+          background: clearFeedbackPressed ? "#ff1744" : "#b71c1c",
+          color: clearFeedbackHover ? "white" : "white",
+          cursor: "pointer",
+          fontWeight: "bold",
+          transition: "background 0.15s, border 0.15s, color 0.15s",
+        }}
+      >
+        Clear Answer
+      </button>
     </div>
   );
 };

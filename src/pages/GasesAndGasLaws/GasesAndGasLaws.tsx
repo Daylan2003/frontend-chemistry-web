@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const GasesAndGasLaws: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const GasesAndGasLaws: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#358b96" />
       <div style={{ height: "30vh", width: "100vw", background: "#4DD0E1" }} />
       <div
         style={{
@@ -94,6 +96,7 @@ const GasesAndGasLaws: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#358b96"
         />
 
         {/* Filtered Questions */}
@@ -101,7 +104,7 @@ const GasesAndGasLaws: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#4DD0E1"
+            backgroundColor="#358b96"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

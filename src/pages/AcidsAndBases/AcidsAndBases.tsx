@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionTemplate from "../../components/QuestionTemplate";
 import SearchAndFilter from "../../components/SearchAndFilter";
 import { getQuestionsByIds } from "../../data/questions";
+import BackButton from "../../components/BackButton";
 
 const AcidsAndBases: React.FC = () => {
   const [filteredQuestions, setFilteredQuestions] = useState<any[]>([]);
@@ -72,6 +73,7 @@ const AcidsAndBases: React.FC = () => {
 
   return (
     <>
+      <BackButton borderColor="#096159" />
       <div style={{ height: "30vh", width: "100vw", background: "#009688" }} />
       <div
         style={{
@@ -94,6 +96,7 @@ const AcidsAndBases: React.FC = () => {
         <SearchAndFilter 
           questions={questions}
           onFilteredQuestionsChange={setFilteredQuestions}
+          questionTemplateColor="#096159"
         />
 
         {/* Filtered Questions */}
@@ -101,7 +104,7 @@ const AcidsAndBases: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#009688"
+            backgroundColor="#096159"
             prompt={q.prompt}
             author={q.author}
             from={q.from}

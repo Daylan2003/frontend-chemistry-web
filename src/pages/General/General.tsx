@@ -104,7 +104,7 @@ const General: React.FC = () => {
           <QuestionTemplate
             key={q.id}
             question={q.question}
-            backgroundColor="#007BFF"
+            backgroundColor="#054c99"
             prompt={q.prompt}
             author={q.author}
             from={q.from}
