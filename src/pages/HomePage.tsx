@@ -141,13 +141,7 @@ const HomePage: React.FC = () => {
           navigate={navigate}
           style={{ aspectRatio: "4 / 1", maxWidth: "600px", minWidth: 0, minHeight: 0 }}
         />
-        <NavButton
-          label="Question Bank"
-          to="/question-bank"
-          color="#4CAF50"
-          navigate={navigate}
-          style={{ aspectRatio: "4 / 1", maxWidth: "600px", minWidth: 0, minHeight: 0, marginTop: "1rem" }}
-        />
+
       </div>
       <div className="button-grid">
         <NavButton

@@ -11,7 +11,7 @@ import AcidsAndBases from "./pages/AcidsAndBases/AcidsAndBases";
 import GasesAndGasLaws from "./pages/GasesAndGasLaws/GasesAndGasLaws";
 import SolutionsAndSolubility from "./pages/SolutionsAndSolubility/SolutionsAndSolubility";
 import LaboratoryWork from "./pages/LabratoryWork/LaboratoryWork";
-import QuestionBank from "./pages/QuestionBank";
+
 import Header from "./components/Header";
 import BackButton from "./components/BackButton";
 import "./App.css";
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/general" element={<General />} />
-        <Route path="/question-bank" element={<QuestionBank />} />
+
         <Route path="/matter-and-its-properties" element={<MatterAndItsProperties />} />
         <Route path="/atomic-structure" element={<AtomicStructure />} />
         <Route path="/periodic-table" element={<PeriodicTable />} />
